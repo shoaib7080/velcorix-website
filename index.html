@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velcorix - Mechanical Trading & Consultancy</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <!-- Placeholder for Logo - checking images folder later -->
+          <img
+            src="images/logo.png"
+            alt="Velcorix Logo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"
+          />
+          <h2
+            style="
+              display: none;
+              font-weight: bold;
+              color: var(--primary-color);
+            "
+          >
+            VELCORIX
+          </h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rentals.html">Rental Equipments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consultancy.html">Consultancy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary ms-3">Get a Quote</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <section class="hero-section">
+      <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div
+            class="swiper-slide"
+            style="background-image: url('images/banner/banner-1.jpg')"
+          >
+            <!-- Placeholder path -->
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+              <h1 class="hero-title">Precision in Mechanical Trading</h1>
+              <p class="hero-subtitle">
+                Delivering excellence and innovation for industrial solutions.
+              </p>
+              <a href="services.html" class="btn btn-primary btn-lg"
+                >Explore Services</a
+              >
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div
+            class="swiper-slide"
+            style="background-image: url('images/banner/banner-2.jpg')"
+          >
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+              <h1 class="hero-title">Expert Consultancy Services</h1>
+              <p class="hero-subtitle">
+                Guiding your projects to success with industry-leading
+                expertise.
+              </p>
+              <a href="contact.html" class="btn btn-primary btn-lg"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- About Teaser Section -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="images/resource/about-1.jpg"
+              alt="About Velcorix"
+              class="img-fluid rounded shadow"
+              onerror="this.src='https://placehold.co/600x400?text=About+Image'"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h4 class="text-uppercase text-secondary mb-2">Who We Are</h4>
+            <h2 class="mb-4">
+              Leading Mechanical Trading & Consultancy in UAE
+            </h2>
+            <p class="mb-4">
+              Velcorix is dedicated to providing top-tier mechanical solutions
+              and expert consultancy. With years of experience in the UAE
+              market, we bridge the gap between quality manufacturers and
+              industrial needs.
+            </p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2">
+                <i class="fas fa-check-circle text-primary me-2"></i> Quality
+                Assurance
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-check-circle text-primary me-2"></i> Expert
+                Engineering Team
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-check-circle text-primary me-2"></i> Timely
+                Delivery
+              </li>
+            </ul>
+            <a href="about.html" class="btn btn-outline-dark">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Services</h2>
+          <p>Comprehensive solutions for your industrial requirements</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-truck-moving"></i>
+              </div>
+              <h3>Rental Equipments</h3>
+              <p>
+                Top-tier industrial machinery including generators, cranes, and
+                heavy earth moving equipment.
+              </p>
+              <a href="rentals.html" class="text-primary fw-bold"
+                >Explore Rentals <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3>Consultancy Services</h3>
+              <p>
+                Expert strategic planning for plant shutdowns, maintenance
+                strategies, and project management.
+              </p>
+              <a href="consultancy.html" class="text-primary fw-bold"
+                >View Consultancy <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="service-card text-center">
+              <div class="service-icon"><i class="fas fa-tools"></i></div>
+              <h3>Specialized Services</h3>
+              <p>
+                Oil & Gas pre-commissioning support, hydro testing, and crane
+                installation services.
+              </p>
+              <a href="services.html" class="text-primary fw-bold"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section
+      class="section-padding text-white"
+      style="background-color: var(--primary-color)"
+    >
+      <div class="container text-center">
+        <h2 class="mb-4">Ready to Optimize Your Operations?</h2>
+        <p class="mb-4 lead">
+          Get in touch with our experts today for a free consultation.
+        </p>
+        <a href="contact.html" class="btn btn-light btn-lg text-primary fw-bold"
+          >Contact Us Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Velcorix</h5>
+            <p>
+              Your trusted partner for mechanical trading and consultancy in the
+              UAE. Committed to quality and excellence.
+            </p>
+            <div class="mt-3">
+              <a href="#" class="d-inline me-3"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" class="d-inline me-3"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a href="#" class="d-inline me-3"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="rentals.html">Rentals</a></li>
+              <li><a href="consultancy.html">Consultancy</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Our Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="rentals.html">Rental Equipments</a></li>
+              <li><a href="consultancy.html">Consultancy</a></li>
+              <li><a href="services.html">Specialized Services</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact Us</h5>
+            <p><i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE</p>
+            <p><i class="fas fa-phone me-2"></i> +971 50 123 4567</p>
+            <p><i class="fas fa-envelope me-2"></i> info@velcorix.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Velcorix. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

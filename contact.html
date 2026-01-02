@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Velcorix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo.png"
+            alt="Velcorix Logo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"
+          />
+          <h2
+            style="
+              display: none;
+              font-weight: bold;
+              color: var(--primary-color);
+            "
+          >
+            VELCORIX
+          </h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rentals.html">Rental Equipments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consultancy.html">Consultancy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary ms-3">Get a Quote</a>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="bg-dark text-white text-center py-5"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url('images/banner/banner-2.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="container">
+        <h1 class="display-4 fw-bold">Contact Us</h1>
+        <p class="lead">We'd Love to Hear From You</p>
+      </div>
+    </header>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="p-4 bg-light shadow rounded h-100">
+              <h3 class="mb-4 text-primary">Get In Touch</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="h-100">
+              <div class="mb-4">
+                <h3 class="text-secondary">Contact Information</h3>
+                <p>
+                  Feel free to visit our office or contact us via phone or
+                  email.
+                </p>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <div class="bg-primary text-white p-3 rounded-circle me-3">
+                  <i class="fas fa-map-marker-alt fa-lg"></i>
+                </div>
+                <div>
+                  <h5 class="mb-0">Address</h5>
+                  <p class="mb-0 text-muted">
+                    Business Bay, Dubai, United Arab Emirates
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <div class="bg-primary text-white p-3 rounded-circle me-3">
+                  <i class="fas fa-phone fa-lg"></i>
+                </div>
+                <div>
+                  <h5 class="mb-0">Phone</h5>
+                  <p class="mb-0 text-muted">+971 50 123 4567</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <div class="bg-primary text-white p-3 rounded-circle me-3">
+                  <i class="fas fa-envelope fa-lg"></i>
+                </div>
+                <div>
+                  <h5 class="mb-0">Email</h5>
+                  <p class="mb-0 text-muted">info@velcorix.com</p>
+                </div>
+              </div>
+
+              <!-- Map Placeholder -->
+              <div
+                class="bg-secondary text-white d-flex align-items-center justify-content-center rounded"
+                style="height: 250px"
+              >
+                <p class="mb-0"><i class="fas fa-map"></i> Google Maps Embed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Velcorix</h5>
+            <p>
+              Your trusted partner for mechanical trading and consultancy in the
+              UAE.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="rentals.html">Rentals</a></li>
+              <li><a href="consultancy.html">Consultancy</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact Us</h5>
+            <p>Dubai, UAE</p>
+            <p>info@velcorix.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Velcorix. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
