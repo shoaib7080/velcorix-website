@@ -188,3 +188,94 @@ footer a:hover {
   font-size: 0.9rem;
   color: #aaa;
 }
+
+/* Enhanced Dropdown Styling & Desktop Hover */
+.dropdown-menu {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.dropdown-item {
+  color: #555;
+  padding: 8px 20px;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: transparent;
+  color: var(--secondary-color);
+  padding-left: 25px; /* Visual slide effect */
+}
+
+.dropdown-menu .dropdown-submenu {
+  min-width: 200px; /* Wider nested menus */
+}
+
+/* Desktop Hover Interaction */
+@media (min-width: 992px) {
+  /* Open dropdown on hover automatically */
+  .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    animation: fadeInUp 0.3s ease forwards;
+  }
+
+  /* Position nested menus correctly to the right */
+  .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+  }
+
+  /* Show nested menu on hover */
+  .dropdown-menu .dropdown-item:hover > .dropdown-submenu {
+    display: block;
+  }
+
+  /* Invisible bridge to prevent menu from closing when moving mouse */
+  .nav-item.dropdown:hover > .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-submenu {
+    position: static;
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: none;
+    box-shadow: none;
+  }
+
+  .dropdown-menu {
+    border: none;
+    box-shadow: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
