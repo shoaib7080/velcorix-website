@@ -33,4 +33,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
     */
+
+  // Fix for Dropdown Parent Links on Desktop
+  // Allows clicking "Rental Equipments" or "Services" to navigate to their main pages
+  // while keeping hover behavior for opening the menu.
+  const dropdownToggles = document.querySelectorAll(
+    ".nav-item.dropdown > .dropdown-toggle"
+  );
+
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", function (e) {
+      if (window.innerWidth >= 992) {
+        // On desktop, follow the link instead of toggling the dropdown
+        // Bootstrap's JS prevents this by default, so we manually redirect
+        window.location.href = this.getAttribute("href");
+      }
+    });
+  });
 });
