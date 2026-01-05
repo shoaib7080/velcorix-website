@@ -3,27 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velcorix - Consultancy & Advisory</title>
+    <title>Consultancy & Advisory - Velcorix Services</title>
     <meta
       name="description"
-      content="Expert corporate consultancy from Velcorix. Strategy, operations, financial, IT, HR, and project management consulting in UAE."
+      content="Strategic business consultancy services optimizing operations, finance, and growth."
     />
+    <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Google Fonts: Poppins & Open Sans -->
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -58,12 +62,10 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
-
-            <!-- Rental Equipments Dropdown -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="rentals.html"
                 id="rentalDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -114,13 +116,12 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="cranes.html"
+                  <a class="dropdown-item" href="rentals/cranes.html"
                     >Tower Cranes & EOT Cranes</a
                   >
                 </li>
-
                 <li>
-                  <a class="dropdown-item" href="solar-5kw.html"
+                  <a class="dropdown-item" href="rentals/solar-5kw.html"
                     >5kW Solar Power Kit</a
                   >
                 </li>
@@ -131,12 +132,10 @@
                 </li>
               </ul>
             </li>
-
-            <!-- Services Dropdown -->
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
-                href="#"
+                class="nav-link dropdown-toggle active"
+                href="services.html"
                 id="servicesDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -151,13 +150,9 @@
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="services/epc.html">EPC</a></li>
                 <li>
-                  <a class="dropdown-item" href="services/epc.html">EPC</a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="services/pre-commissioning.html"
+                  <a class="dropdown-item" href="services/pre-commissioning.html"
                     >Oil & Gas Pre-commissioning</a
                   >
                 </li>
@@ -167,152 +162,51 @@
                   >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item active"
-                    href="consultancy-advisory.html"
+                  <a class="dropdown-item active" href="consultancy-advisory.html"
                     >Consultancy & Advisory</a
                   >
                 </li>
-
-                <!-- Specialized Services Nested -->
-                <li>
+                 <!-- Nested Menus -->
+                 <li>
                   <a class="dropdown-item" href="#"
                     >Specialised Services &raquo;</a
                   >
                   <ul class="dropdown-submenu dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="services/upstream.html"
-                        >Oil & Gas Upstream</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="services/downstream.html"
-                        >Oil & Gas Downstream</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="services/petrochemical.html"
-                        >Petrochemical</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="services/offshore.html"
-                        >Offshore</a
-                      >
-                    </li>
+                    <li><a class="dropdown-item" href="services/upstream.html">Oil & Gas Upstream</a></li>
+                    <li><a class="dropdown-item" href="services/downstream.html">Oil & Gas Downstream</a></li>
+                    <li><a class="dropdown-item" href="services/petrochemical.html">Petrochemical</a></li>
+                    <li><a class="dropdown-item" href="services/offshore.html">Offshore</a></li>
                   </ul>
                 </li>
-
-                <!-- Flange Management Nested -->
                 <li>
                   <a class="dropdown-item" href="#"
                     >Flange Management &raquo;</a
                   >
                   <ul class="dropdown-submenu dropdown-menu">
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="services/bolt-torquing.html"
-                        >Bolt Torquing</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="services/bolt-tensioning.html"
-                        >Bolt Tensioning</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="services/flange-machining.html"
-                        >Flange Machining</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="services/flange-support.html"
-                        >Management & Support</a
-                      >
-                    </li>
+                    <li><a class="dropdown-item" href="services/bolt-torquing.html">Bolt Torquing</a></li>
+                    <li><a class="dropdown-item" href="services/bolt-tensioning.html">Bolt Tensioning</a></li>
+                    <li><a class="dropdown-item" href="services/flange-machining.html">Flange Machining</a></li>
+                    <li><a class="dropdown-item" href="services/flange-support.html">Management & Support</a></li>
                   </ul>
                 </li>
-
-                <!-- Specialized Manpower Nested -->
-                <li>
+                 <li>
                   <a class="dropdown-item" href="#"
                     >Specialised Manpower &raquo;</a
                   >
                   <ul class="dropdown-submenu dropdown-menu">
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="services/manpower-shutdown.html"
-                        >Shutdown</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="services/manpower-precomm.html"
-                        >Pre-commissioning</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="services/manpower-lifting.html"
-                        >Lifting</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="services/manpower-hac.html"
-                        >HAC</a
-                      >
-                    </li>
+                    <li><a class="dropdown-item" href="services/manpower-shutdown.html">Shutdown</a></li>
+                    <li><a class="dropdown-item" href="services/manpower-precomm.html">Pre-commissioning</a></li>
+                    <li><a class="dropdown-item" href="services/manpower-lifting.html">Lifting</a></li>
+                    <li><a class="dropdown-item" href="services/manpower-hac.html">HAC</a></li>
                   </ul>
                 </li>
-
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="services/pneumatic-testing.html"
-                    >Pneumatic Testing</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="services/hot-tapping.html"
-                    >Hot Tapping</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="services/project-management.html"
-                    >Project Management Services</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="services/engg-construction.html"
-                    >Engineering Construction
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="services/crane-installation.html"
-                    >Crane Installation</a
-                  >
-                </li>
+                <li><a class="dropdown-item" href="services/pneumatic-testing.html">Pneumatic Testing</a></li>
+                <li><a class="dropdown-item" href="services/hot-tapping.html">Hot Tapping</a></li>
+                <li><a class="dropdown-item" href="services/project-management.html">Project Management Services</a></li>
+                <li><a class="dropdown-item" href="services/engg-construction.html">Engineering Construction</a></li>
+                <li><a class="dropdown-item" href="services/crane-installation.html">Crane Installation</a></li>
               </ul>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -322,135 +216,302 @@
       </div>
     </nav>
 
+    <!-- Header (Hero) -->
     <header
       class="bg-dark text-white text-center py-5"
       style="
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url('images/service/service-3.jpg');
+          url('images/service/service-8.jpg');
         background-size: cover;
         background-position: center;
       "
     >
       <div class="container">
         <h1 class="display-4 fw-bold">Consultancy & Advisory</h1>
-        <p class="lead">
-          Holistic business solutions to drive growth and efficiency.
-        </p>
+        <p class="lead">Strategic Insight for Sustainable Growth</p>
       </div>
     </header>
 
+    <!-- Overview (Intro) -->
     <section class="section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center mb-5">
-            <h2 class="text-primary">Corporate Consultancy</h2>
-            <p>Holistic business solutions to drive growth and efficiency.</p>
+          <div class="col-lg-6">
+            <img
+              src="images/resource/service-details.jpg"
+              class="img-fluid shadow intro-image"
+              alt="Consultancy & Advisory"
+              onerror="this.src='https://placehold.co/800x400?text=Consultancy'"
+            />
           </div>
+          <div class="col-lg-6 mb-4">
+            <h2 class="mb-3">Driving Operational Excellence</h2>
+            <p>
+              In a rapidly evolving market, having the right strategy is as important as having the right equipment. Velcorix offers specialized consultancy and advisory services tailored to the energy and construction sectors.
+            </p>
+            <p>
+              We help organizations optimize their supply chains, improve operational efficiency, navigate regulatory landscapes, and manage complex projects with confidence. Ours is a partnership approach, where we work alongside your teams to transfer knowledge and build long-term capability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-chess-knight fa-3x text-secondary mb-3"></i>
-                <h4 class="card-title">Strategy Consulting</h4>
-                <p class="card-text">
-                  Developing long-term goals and strategic plans to navigate
-                  market shifts and seize new opportunities.
-                </p>
+    <!-- Scope / What’s Included (Key Offerings) -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Scope / What’s Included</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">Strategic Planning</h5>
+                <p class="text-muted mb-0">Market entry strategies, feasibility studies, and business modeling.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-chart-line fa-3x text-secondary mb-3"></i>
-                <h4 class="card-title">Operations Consulting</h4>
-                <p class="card-text">
-                  Optimizing internal processes and supply chains to improve
-                  productivity and reduce operational costs.
-                </p>
+          <div class="col-md-6">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">Operational Optimization</h5>
+                <p class="text-muted mb-0">Lean management implementation and workflow process re-engineering.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-coins fa-3x text-secondary mb-3"></i>
-                <h4 class="card-title">Financial Consulting</h4>
-                <p class="card-text">
-                  Expert financial analysis, risk management, and investment
-                  planning to ensure fiscal health.
-                </p>
+          <div class="col-md-6">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">Supply Chain</h5>
+                <p class="text-muted mb-0">Procurement strategy, vendor management, and logistics optimization.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-laptop-code fa-3x text-secondary mb-3"></i>
-                <h4 class="card-title">IT Consulting</h4>
-                <p class="card-text">
-                  Leveraging technology to solve business problems, including
-                  digital transformation and systems integration.
-                </p>
+          <div class="col-md-6">
+             <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">HSE & Quality</h5>
+                <p class="text-muted mb-0">Developing integrated management systems (ISO 9001/14001/45001).</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-users fa-3x text-secondary mb-3"></i>
-                <h4 class="card-title">HR Consulting</h4>
-                <p class="card-text">
-                  Talent acquisition strategies, organizational development, and
-                  employee engagement solutions.
-                </p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typical Applications -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Typical Real-World Applications</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-chart-line"></i>
               </div>
+              <h4>Efficiency Audits</h4>
+              <p class="small text-muted mb-0">
+                Identifying bottlenecks in production lines.
+              </p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body text-center">
-                <i class="fas fa-tasks fa-3x text-secondary mb-3"></i>
-                <h4 class="card-title">Project Management</h4>
-                <p class="card-text">
-                  End-to-end project oversight ensuring delivery on time, within
-                  scope, and on budget.
-                </p>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-search-dollar"></i>
               </div>
+              <h4>Cost Reduction</h4>
+              <p class="small text-muted mb-0">
+                Analysis of OPEX to identify saving opportunities.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h4>Project Rescue</h4>
+              <p class="small text-muted mb-0">
+                Intervention to realign stalled or failing projects.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h4>Digital Transformation</h4>
+              <p class="small text-muted mb-0">
+                 Adopting IoT and asset management software.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Capability Details (How We Do It) -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-4 fw-bold">Capability Details</h2>
+                <div class="bg-white p-4 rounded shadow-sm">
+                   <p class="text-muted">
+                    We combine domain expertise with analytical rigor to deliver actionable insights.
+                   </p>
+                   <ul class="list-unstyled">
+                      <li class="mb-3 d-flex align-items-start">
+                        <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                        <div>
+                          <strong>Data-Driven:</strong> Decisions backed by detailed market analysis and performance data.
+                        </div>
+                      </li>
+                      <li class="mb-3 d-flex align-items-start">
+                         <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                         <div>
+                           <strong>Change Management:</strong> Helping teams adapt to new processes and technologies effectively.
+                         </div>
+                       </li>
+                       <li class="mb-3 d-flex align-items-start">
+                         <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                         <div>
+                           <strong>Global Network:</strong> Access to a network of subject matter experts across various disciplines.
+                         </div>
+                       </li>
+                   </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                 <img src="images/background/award-1.jpg" alt="Consultancy Capabilities" class="img-fluid rounded shadow w-100" onerror="this.src='https://placehold.co/600x400?text=Our+Expertise'">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance & Support -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+            <h2>Value Delivered</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+             <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                <i class="fas fa-bullseye text-primary mb-3 fa-2x"></i>
+                <h6 class="fw-bold">Clarity</h6>
+                <p class="small text-muted mb-0">Clear roadmaps for complex business challenges.</p>
+             </div>
+          </div>
+          <div class="col-md-3">
+             <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                <i class="fas fa-balance-scale text-primary mb-3 fa-2x"></i>
+                <h6 class="fw-bold">Compliance</h6>
+                <p class="small text-muted mb-0">Navigating legal and regulatory requirements seamlessly.</p>
+             </div>
+          </div>
+          <div class="col-md-3">
+             <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                <i class="fas fa-hand-holding-usd text-primary mb-3 fa-2x"></i>
+                <h6 class="fw-bold">ROI</h6>
+                <p class="small text-muted mb-0">Focus on tangible financial returns on investment.</p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center text-white">
+      <div class="container">
+        <h2 class="cta-heading">Transform Your Business</h2>
+        <p class="cta-subtext">
+          Get expert advice to propel your organization forward.
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-lg mt-3"
+          >Talk to an Advisor</a
+        >
+      </div>
+      <div class="footer-divider"></div>
+    </section>
+
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Velcorix</h5>
-            <p>
-              Your trusted partner for mechanical trading and consultancy in the
-              UAE.
-            </p>
-          </div>
-          <div class="col-md-2">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="rentals.html">Rentals</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>Contact Us</h5>
-            <p>Dubai, UAE</p>
-            <p>info@velcorix.com</p>
-          </div>
+        <!-- Top Row: Logo, Name, Description -->
+        <div class="row align-items-center mb-5 pb-4" style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+           <div class="col-lg-12 d-md-flex align-items-center justify-content-between text-center text-md-start">
+               <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3 mb-md-0">
+                   <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                        <img src="images/logo/velcorix-logo.png" alt="Velcorix Logo" style="height: 50px; margin-right: 15px;">
+                        <h4 class="mb-0 text-white fw-bold" style="letter-spacing: 1px;">VELCORIX</h4>
+                   </a>
+               </div>
+               <p class="mb-0 text-white-50 ms-md-4">Your trusted partner for mechanical trading and consultancy in the UAE.</p>
+           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 Velcorix. All Rights Reserved.</p>
+
+        <div class="row">
+           <!-- Quick Links -->
+           <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white-50 text-decoration-none mb-2 d-block">Home</a></li>
+              <li><a href="about.html" class="text-white-50 text-decoration-none mb-2 d-block">About Us</a></li>
+              <li><a href="rentals.html" class="text-white-50 text-decoration-none mb-2 d-block">Rental Equipments</a></li>
+              <li><a href="services.html" class="text-white-50 text-decoration-none mb-2 d-block">Services</a></li>
+              <li><a href="contact.html" class="text-white-50 text-decoration-none mb-2 d-block">Contact</a></li>
+            </ul>
+           </div>
+
+           <!-- Rentals -->
+           <div class="col-md-3 mb-4 mb-md-0">
+             <h5 class="text-white mb-4">Rentals</h5>
+             <ul class="list-unstyled">
+               <li><a href="rentals/generators.html" class="text-white-50 text-decoration-none mb-2 d-block">Power Generators</a></li>
+               <li><a href="rentals/welding.html" class="text-white-50 text-decoration-none mb-2 d-block">Welding Machines</a></li>
+               <li><a href="rentals/cranes.html" class="text-white-50 text-decoration-none mb-2 d-block">Cranes & Lifting</a></li>
+               <li><a href="rentals/earth-moving.html" class="text-white-50 text-decoration-none mb-2 d-block">Earth Moving</a></li>
+             </ul>
+           </div>
+
+           <!-- Services -->
+           <div class="col-md-3 mb-4 mb-md-0">
+             <h5 class="text-white mb-4">Services</h5>
+             <ul class="list-unstyled">
+               <li><a href="shutdown-management.html" class="text-white-50 text-decoration-none mb-2 d-block">Shutdown Mgmt</a></li>
+               <li><a href="services/epc.html" class="text-white-50 text-decoration-none mb-2 d-block">EPC Projects</a></li>
+               <li><a href="services/flange-management.html" class="text-white-50 text-decoration-none mb-2 d-block">Flange Mgmt</a></li>
+               <li><a href="services/specialised-services.html" class="text-white-50 text-decoration-none mb-2 d-block">Oil & Gas Services</a></li>
+             </ul>
+           </div>
+
+           <!-- Contact -->
+           <div class="col-md-3">
+             <h5 class="text-white mb-4">Contact Us</h5>
+             <p class="text-white-50 mb-2"><i class="fas fa-map-marker-alt me-2 text-primary"></i> Dubai, UAE</p>
+             <p class="text-white-50 mb-2"><i class="fas fa-phone me-2 text-primary"></i> +971 50 123 4567</p>
+             <p class="text-white-50 mb-4"><i class="fas fa-envelope me-2 text-primary"></i> info@velcorix.com</p>
+             <div>
+               <a href="#" class="text-white-50 me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+               <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook fa-lg"></i></a>
+               <a href="#" class="text-white-50"><i class="fab fa-instagram fa-lg"></i></a>
+             </div>
+           </div>
+        </div>
+
+        <div class="footer-bottom mt-5 pt-3 text-center text-white-50" style="border-top: 1px solid rgba(255,255,255,0.1);">
+          <p class="mb-0">&copy; 2026 Velcorix. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

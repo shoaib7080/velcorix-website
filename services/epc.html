@@ -6,23 +6,28 @@
     <title>EPC Services - Velcorix</title>
     <meta
       name="description"
-      content="Engineering, Procurement, and Construction (EPC) services by Velcorix."
+      content="Engineering, Procurement, and Construction (EPC) services by Velcorix for the oil & gas sector."
     />
+    <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
@@ -65,8 +70,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Rental Equipments</a
               >
+                Rental Equipments
+              </a>
               <ul class="dropdown-menu" aria-labelledby="rentalDropdown">
                 <li>
                   <a class="dropdown-item fw-bold" href="../rentals.html"
@@ -114,7 +120,6 @@
                     >Tower Cranes & EOT Cranes</a
                   >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="../rentals/solar-5kw.html"
                     >5kW Solar Power Kit</a
@@ -135,8 +140,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Services</a
               >
+                Services
+              </a>
               <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                 <li>
                   <a class="dropdown-item fw-bold" href="../services.html"
@@ -144,7 +150,7 @@
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="epc.html">EPC</a></li>
+                <li><a class="dropdown-item active" href="epc.html">EPC</a></li>
                 <li>
                   <a class="dropdown-item" href="pre-commissioning.html"
                     >Oil & Gas Pre-commissioning</a
@@ -160,29 +166,16 @@
                     >Consultancy & Advisory</a
                   >
                 </li>
-                <li>
+                 <!-- Nested Menus -->
+                 <li>
                   <a class="dropdown-item" href="#"
                     >Specialised Services &raquo;</a
                   >
                   <ul class="dropdown-submenu dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="upstream.html"
-                        >Oil & Gas Upstream</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="downstream.html"
-                        >Oil & Gas Downstream</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="petrochemical.html"
-                        >Petrochemical</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="offshore.html">Offshore</a>
-                    </li>
+                    <li><a class="dropdown-item" href="upstream.html">Oil & Gas Upstream</a></li>
+                    <li><a class="dropdown-item" href="downstream.html">Oil & Gas Downstream</a></li>
+                    <li><a class="dropdown-item" href="petrochemical.html">Petrochemical</a></li>
+                    <li><a class="dropdown-item" href="offshore.html">Offshore</a></li>
                   </ul>
                 </li>
                 <li>
@@ -190,78 +183,28 @@
                     >Flange Management &raquo;</a
                   >
                   <ul class="dropdown-submenu dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="bolt-torquing.html"
-                        >Bolt Torquing</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="bolt-tensioning.html"
-                        >Bolt Tensioning</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="flange-machining.html"
-                        >Flange Machining</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="flange-support.html"
-                        >Management & Support</a
-                      >
-                    </li>
+                    <li><a class="dropdown-item" href="bolt-torquing.html">Bolt Torquing</a></li>
+                    <li><a class="dropdown-item" href="bolt-tensioning.html">Bolt Tensioning</a></li>
+                    <li><a class="dropdown-item" href="flange-machining.html">Flange Machining</a></li>
+                    <li><a class="dropdown-item" href="flange-support.html">Management & Support</a></li>
                   </ul>
                 </li>
-                <li>
+                 <li>
                   <a class="dropdown-item" href="#"
                     >Specialised Manpower &raquo;</a
                   >
                   <ul class="dropdown-submenu dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="manpower-shutdown.html"
-                        >Shutdown</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="manpower-precomm.html"
-                        >Pre-commissioning</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="manpower-lifting.html"
-                        >Lifting</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="manpower-hac.html">HAC</a>
-                    </li>
+                    <li><a class="dropdown-item" href="manpower-shutdown.html">Shutdown</a></li>
+                    <li><a class="dropdown-item" href="manpower-precomm.html">Pre-commissioning</a></li>
+                    <li><a class="dropdown-item" href="manpower-lifting.html">Lifting</a></li>
+                    <li><a class="dropdown-item" href="manpower-hac.html">HAC</a></li>
                   </ul>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="pneumatic-testing.html"
-                    >Pneumatic Testing</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="hot-tapping.html"
-                    >Hot Tapping</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="project-management.html"
-                    >Project Management Services</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="engg-construction.html"
-                    >Engineering Construction
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="crane-installation.html"
-                    >Crane Installation</a
-                  >
-                </li>
+                <li><a class="dropdown-item" href="pneumatic-testing.html">Pneumatic Testing</a></li>
+                <li><a class="dropdown-item" href="hot-tapping.html">Hot Tapping</a></li>
+                <li><a class="dropdown-item" href="project-management.html">Project Management Services</a></li>
+                <li><a class="dropdown-item" href="engg-construction.html">Engineering Construction</a></li>
+                <li><a class="dropdown-item" href="crane-installation.html">Crane Installation</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -273,6 +216,7 @@
       </div>
     </nav>
 
+    <!-- Header (Hero) -->
     <header
       class="bg-dark text-white text-center py-5"
       style="
@@ -290,79 +234,449 @@
       </div>
     </header>
 
+    <!-- Overview (Intro) -->
     <section class="section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-6">
             <img
-              src="../images/resource/service-details.jpg"
-              class="img-fluid rounded mb-4 w-100"
-              alt="EPC"
+              src="../images/background/about-1.jpg"
+              class="img-fluid shadow intro-image"
+              alt="EPC Services"
               onerror="this.src='https://placehold.co/800x400?text=EPC+Services'"
             />
-            <h3>Detailed EPC Solutions</h3>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <h2 class="mb-3">Integrated EPC Solutions</h2>
             <p>
-              We provide comprehensive Engineering, Procurement, and
-              Construction (EPC) services for the oil & gas and mechanical
-              sectors.
+              Velcorix delivers comprehensive Engineering, Procurement, and
+              Construction (EPC) services tailored for the oil & gas and mechanical
+              sectors. We manage projects from concept to commissioning with a focus on quality and safety.
             </p>
-            <ul>
-              <li>Front End Engineering Design (FEED)</li>
-              <li>Global Procurement and Supply Chain Management</li>
-              <li>Construction Management and Execution</li>
-              <li>Project Handover and Commissioning</li>
-            </ul>
-            <div class="mt-4">
-              <a href="../contact.html" class="btn btn-primary"
-                >Request a Quote</a
-              >
+            <p>
+              Our integrated approach ensures seamless execution, cost optimization, and timely delivery of complex industrial projects across the UAE and the region.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scope / What’s Included (Key Offerings) -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Scope / What’s Included</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">FEED & Detailed Engineering</h5>
+                <p class="text-muted mb-0">Front-End Engineering Design and detailed technical planning.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">Strategic Procurement</h5>
+                <p class="text-muted mb-0">Global sourcing of materials and equipment with rigorous QA/QC.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">Construction Management</h5>
+                <p class="text-muted mb-0">On-site supervision, fabrication, and installation services.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+             <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">Commissioning & Handover</h5>
+                <p class="text-muted mb-0">Testing, startup support, and final project handover.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typical Applications -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Typical Real-World Applications</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-oil-well"></i>
+              </div>
+              <h4>Upstream Oil & Gas</h4>
+              <p class="small text-muted mb-0">
+                Wellhead tie-ins and gathering stations.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-industry"></i>
+              </div>
+              <h4>Refineries</h4>
+              <p class="small text-muted mb-0">
+                Process unit upgrades and expansion projects.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-burn"></i>
+              </div>
+              <h4>Petrochemical</h4>
+              <p class="small text-muted mb-0">
+                Plant modifications and reliability improvements.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h4>Utilities</h4>
+              <p class="small text-muted mb-0">
+                Water treatment and power distribution infrastructure.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
+    <!-- Capability Details (How We Do It) -->
+    <section class="section-padding bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Velcorix</h5>
-            <p>
-              Your trusted partner for mechanical trading and consultancy in the
-              UAE.
-            </p>
-          </div>
-          <div class="col-md-2">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../rentals.html">Rentals</a></li>
-              <li>
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="#"
-                  id="servicesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-              </li>
-              <li><a href="../contact.html">Contact</a></li>
-            </ul>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-4 fw-bold">Capability Details</h2>
+                <div class="bg-white p-4 rounded shadow-sm">
+                   <p class="text-muted">
+                    Our execution strategy is built on a phase-gate process that ensures control and visibility at every stage.
+                   </p>
+                   <ul class="list-unstyled">
+                      <li class="mb-3 d-flex align-items-start">
+                        <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                        <div>
+                          <strong>Engineering:</strong> Using advanced 3D modeling and simulation tools to optimize design before construction begins.
+                        </div>
+                      </li>
+                      <li class="mb-3 d-flex align-items-start">
+                         <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                         <div>
+                           <strong>Procurement:</strong> Leveraging a global network of approved vendors to secure high-quality materials on schedule.
+                         </div>
+                       </li>
+                       <li class="mb-3 d-flex align-items-start">
+                         <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                         <div>
+                           <strong>Construction:</strong> Deploying experienced project managers and HSE officers to ensure site safety and build quality.
+                         </div>
+                       </li>
+                   </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                 <img src="../images/background/award-1.jpg" alt="EPC Execution" class="img-fluid rounded shadow w-100" onerror="this.src='https://placehold.co/600x400?text=Execution+Capabilities'">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance & Support -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+            <h2>Compliance & Support</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+             <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                <i class="fas fa-hard-hat text-primary mb-3 fa-2x"></i>
+                <h6 class="fw-bold">Safety First</h6>
+                <p class="small text-muted mb-0">Adherence to international HSE standards (ISO 45001) is non-negotiable.</p>
+             </div>
           </div>
           <div class="col-md-3">
-            <h5>Contact Us</h5>
-            <p>Dubai, UAE</p>
-            <p>info@velcorix.com</p>
+             <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                <i class="fas fa-certificate text-primary mb-3 fa-2x"></i>
+                <h6 class="fw-bold">Quality Assurance</h6>
+                <p class="small text-muted mb-0">ISO 9001 certified processes for deliverables and documentation.</p>
+             </div>
+          </div>
+          <div class="col-md-3">
+             <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                <i class="fas fa-drafting-compass text-primary mb-3 fa-2x"></i>
+                <h6 class="fw-bold">Design Compliance</h6>
+                <p class="small text-muted mb-0">Designs meet API, ASME, and local regulatory codes.</p>
+             </div>
+          </div>
+          <div class="col-md-3">
+             <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                <i class="fas fa-users-cog text-primary mb-3 fa-2x"></i>
+                <h6 class="fw-bold">Dedicated PM</h6>
+                <p class="small text-muted mb-0">Single point of contact project management for streamlined communication.</p>
+             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 Velcorix. All Rights Reserved.</p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center text-white">
+      <div class="container">
+        <h2 class="cta-heading">Partner for Success</h2>
+        <p class="cta-subtext">
+          Trust Velcorix with your next critical EPC project.
+        </p>
+        <a href="../contact.html" class="btn btn-primary btn-lg mt-3"
+          >Request a Consultation</a
+        >
+      </div>
+      <div class="footer-divider"></div>
+    </section>
+
+    <!-- Footer -->
+     <footer>
+      <div class="container">
+        <div class="row pt-2 justify-content-between">
+          <!-- Col 1: Logo & Description -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a
+              href="index.html"
+              class="d-flex align-items-center text-decoration-none mb-3"
+            >
+              <img
+                src="../images/logo/velcorix-logo.png"
+                alt="Velcorix Logo"
+                style="height: 40px; margin-right: 10px"
+              />
+              <!-- <h4 class="mb-0 text-white fw-bold" style="letter-spacing: 1px">
+                VELCORIX
+              </h4> -->
+            </a>
+            <p class="text-white-50">
+              Your trusted partner for mechanical trading and consultancy in the
+              UAE. Delivering excellence and innovation in every project.
+            </p>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../about.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Rental Equipments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../contact.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Rentals -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Rentals</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../rentals/generators.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Power Generators</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/welding.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Welding Machines</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/compressors.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Compressors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/hydrotesting.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Hydrotesting Equipment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/cranes.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Cranes & Lifting</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/earth-moving.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Earth Moving</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Services -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Services</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../services/epc.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >EPC</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/pre-commissioning.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Pre-commissioning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../shutdown-management.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Shutdown Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../consultancy-advisory.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Consultancy & Advisory</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/pneumatic-testing.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Pneumatic Testing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/hot-tapping.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Hot Tapping</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/flange-management.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Flange Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/specialised-services.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Oil & Gas Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 5: Contact -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-4">Contact Us</h5>
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE
+            </p>
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-phone me-2"></i> +971 50 123 4567
+            </p>
+            <p class="text-white-50 mb-4">
+              <i class="fas fa-envelope me-2"></i>
+              info@velcorix.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom mt-5 pt-3 border-top border-secondary opacity-75"
+        >
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
+            <p class="mb-3 mb-md-0 text-white-50">
+              &copy; 2026 Velcorix. All Rights Reserved.
+            </p>
+            <!-- Social Links -->
+            <div class="d-flex">
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" class="text-white-50"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/main.js"></script>
   </body>

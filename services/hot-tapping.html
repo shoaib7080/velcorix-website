@@ -6,23 +6,28 @@
     <title>Hot Tapping - Velcorix Services</title>
     <meta
       name="description"
-      content="Hot tapping services for pipeline modifications without shutdown."
+      content="Safe and efficient hot tapping and line stopping services for live pipelines."
     />
+    <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
@@ -65,8 +70,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Rental Equipments</a
               >
+                Rental Equipments
+              </a>
               <ul class="dropdown-menu" aria-labelledby="rentalDropdown">
                 <li>
                   <a class="dropdown-item fw-bold" href="../rentals.html"
@@ -114,7 +120,6 @@
                     >Tower Cranes & EOT Cranes</a
                   >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="../rentals/solar-5kw.html"
                     >5kW Solar Power Kit</a
@@ -135,8 +140,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Services</a
               >
+                Services
+              </a>
               <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                 <li>
                   <a class="dropdown-item fw-bold" href="../services.html"
@@ -160,29 +166,16 @@
                     >Consultancy & Advisory</a
                   >
                 </li>
-                <li>
+                 <!-- Nested Menus -->
+                 <li>
                   <a class="dropdown-item" href="#"
                     >Specialised Services &raquo;</a
                   >
                   <ul class="dropdown-submenu dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="upstream.html"
-                        >Oil & Gas Upstream</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="downstream.html"
-                        >Oil & Gas Downstream</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="petrochemical.html"
-                        >Petrochemical</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="offshore.html">Offshore</a>
-                    </li>
+                    <li><a class="dropdown-item" href="upstream.html">Oil & Gas Upstream</a></li>
+                    <li><a class="dropdown-item" href="downstream.html">Oil & Gas Downstream</a></li>
+                    <li><a class="dropdown-item" href="petrochemical.html">Petrochemical</a></li>
+                    <li><a class="dropdown-item" href="offshore.html">Offshore</a></li>
                   </ul>
                 </li>
                 <li>
@@ -190,78 +183,28 @@
                     >Flange Management &raquo;</a
                   >
                   <ul class="dropdown-submenu dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="bolt-torquing.html"
-                        >Bolt Torquing</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="bolt-tensioning.html"
-                        >Bolt Tensioning</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="flange-machining.html"
-                        >Flange Machining</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="flange-support.html"
-                        >Management & Support</a
-                      >
-                    </li>
+                    <li><a class="dropdown-item" href="bolt-torquing.html">Bolt Torquing</a></li>
+                    <li><a class="dropdown-item" href="bolt-tensioning.html">Bolt Tensioning</a></li>
+                    <li><a class="dropdown-item" href="flange-machining.html">Flange Machining</a></li>
+                    <li><a class="dropdown-item" href="flange-support.html">Management & Support</a></li>
                   </ul>
                 </li>
-                <li>
+                 <li>
                   <a class="dropdown-item" href="#"
                     >Specialised Manpower &raquo;</a
                   >
                   <ul class="dropdown-submenu dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="manpower-shutdown.html"
-                        >Shutdown</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="manpower-precomm.html"
-                        >Pre-commissioning</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="manpower-lifting.html"
-                        >Lifting</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="manpower-hac.html">HAC</a>
-                    </li>
+                    <li><a class="dropdown-item" href="manpower-shutdown.html">Shutdown</a></li>
+                    <li><a class="dropdown-item" href="manpower-precomm.html">Pre-commissioning</a></li>
+                    <li><a class="dropdown-item" href="manpower-lifting.html">Lifting</a></li>
+                    <li><a class="dropdown-item" href="manpower-hac.html">HAC</a></li>
                   </ul>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="pneumatic-testing.html"
-                    >Pneumatic Testing</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="hot-tapping.html"
-                    >Hot Tapping</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="project-management.html"
-                    >Project Management Services</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="engg-construction.html"
-                    >Engineering Construction
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="crane-installation.html"
-                    >Crane Installation</a
-                  >
-                </li>
+                <li><a class="dropdown-item" href="pneumatic-testing.html">Pneumatic Testing</a></li>
+                <li><a class="dropdown-item active" href="hot-tapping.html">Hot Tapping</a></li>
+                <li><a class="dropdown-item" href="project-management.html">Project Management Services</a></li>
+                <li><a class="dropdown-item" href="engg-construction.html">Engineering Construction</a></li>
+                <li><a class="dropdown-item" href="crane-installation.html">Crane Installation</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -273,6 +216,7 @@
       </div>
     </nav>
 
+    <!-- Header (Hero) -->
     <header
       class="bg-dark text-white text-center py-5"
       style="
@@ -283,81 +227,441 @@
       "
     >
       <div class="container">
-        <h1 class="display-4 fw-bold">Hot Tapping</h1>
-        <p class="lead">Safe pipeline intervention under pressure</p>
+        <h1 class="display-4 fw-bold">Hot Tapping Services</h1>
+        <p class="lead">Live Pipeline Intervention without Shutdown</p>
       </div>
     </header>
 
+    <!-- Overview (Intro) -->
     <section class="section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-6">
             <img
-              src="../images/resource/service-details.jpg"
-              class="img-fluid rounded mb-4 w-100"
+              src="../images/background/about-1.jpg"
+              class="img-fluid shadow intro-image"
               alt="Hot Tapping"
               onerror="this.src='https://placehold.co/800x400?text=Hot+Tapping'"
             />
-            <h3>Under-pressure Drilling and Plugging</h3>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <h2 class="mb-3">Keep the Flow Going</h2>
             <p>
-              Hot tapping allows you to make connections to existing pipelines
-              without interrupting flow or draining the system. Our certified
-              technicians ensure safe execution.
+              In today's continuously operating industrial facilities, shutting down a pipeline for modifications is often not an option. Hot tapping (under-pressure drilling) allows for new tie-ins to be made while the system remains in full operation.
             </p>
-            <ul>
-              <li>Pipeline Extensions</li>
-              <li>Valve Insertion</li>
-              <li>Instrumentation Tapping</li>
-              <li>Line Stopping</li>
-            </ul>
-            <div class="mt-4">
-              <a href="../contact.html" class="btn btn-primary"
-                >Request a Quote</a
-              >
+            <p>
+              Velcorix provides world-class hot tapping and line stopping services, enabling clients to expand, repair, or modify piping systems without service interruption, product loss, or environmental risk.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scope / What’s Included (Key Offerings) -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Scope / What’s Included</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">Hot Tapping</h5>
+                <p class="text-muted mb-0">Drilling into pressurized pipes ranging from 1/2" to 42" diameter.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">Line Stopping</h5>
+                <p class="text-muted mb-0">Temporary isolation of pipeline sections for valve replacement or repair.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">Fittings Supply</h5>
+                <p class="text-muted mb-0">Provision of split tees, weldolets, and sandwich valves.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+             <div class="d-flex align-items-start">
+              <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+              <div>
+                <h5 class="fw-bold mb-1">Engineering Study</h5>
+                <p class="text-muted mb-0">Feasibility analysis including flow rate and wall thickness verification.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typical Applications -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Typical Real-World Applications</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h4>New Tie-Ins</h4>
+              <p class="small text-muted mb-0">
+                Adding branch connections for plant expansions.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-thermometer-half"></i>
+              </div>
+              <h4>Probe Insert</h4>
+              <p class="small text-muted mb-0">
+                Installing thermowells or sample probes on live lines.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-wrench"></i>
+              </div>
+              <h4>Valve Change</h4>
+              <p class="small text-muted mb-0">
+                Isolating sections to replace defective mainline valves.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-fire-extinguisher"></i>
+              </div>
+              <h4>Fire Loops</h4>
+              <p class="small text-muted mb-0">
+                 Extending fire water networks without system drainage.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
+    <!-- Capability Details (How We Do It) -->
+    <section class="section-padding bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Velcorix</h5>
-            <p>
-              Your trusted partner for mechanical trading and consultancy in the
-              UAE.
-            </p>
-          </div>
-          <div class="col-md-2">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../rentals.html">Rentals</a></li>
-              <li>
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="#"
-                  id="servicesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-              </li>
-              <li><a href="../contact.html">Contact</a></li>
-            </ul>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="mb-4 fw-bold">Capability Details</h2>
+                <div class="bg-white p-4 rounded shadow-sm">
+                   <p class="text-muted">
+                    Precision is paramount when drilling into live hydrocarbon or chemical lines.
+                   </p>
+                   <ul class="list-unstyled">
+                      <li class="mb-3 d-flex align-items-start">
+                        <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                        <div>
+                          <strong>Versatility:</strong> Capabilities for carbon steel, stainless steel, and ductile iron pipes.
+                        </div>
+                      </li>
+                      <li class="mb-3 d-flex align-items-start">
+                         <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                         <div>
+                           <strong>Conditions:</strong> Equipment rated for temperatures up to 370°C and pressures up to 1480 psi.
+                         </div>
+                       </li>
+                       <li class="mb-3 d-flex align-items-start">
+                         <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                         <div>
+                           <strong>Orientation:</strong> Ability to tap vertically, horizontally, or at any angle required by site constraints.
+                         </div>
+                       </li>
+                   </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                 <img src="../images/background/award-1.jpg" alt="Hot Tapping Expertise" class="img-fluid rounded shadow w-100" onerror="this.src='https://placehold.co/600x400?text=Hot+Tapping+Expertise'">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance & Support -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+            <h2>Compliance Standards</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+             <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                <i class="fas fa-book-reader text-primary mb-3 fa-2x"></i>
+                <h6 class="fw-bold">API 2201</h6>
+                <p class="small text-muted mb-0">Procedures for Welding or Hot Tapping on Equipment.</p>
+             </div>
           </div>
           <div class="col-md-3">
-            <h5>Contact Us</h5>
-            <p>Dubai, UAE</p>
-            <p>info@velcorix.com</p>
+             <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                <i class="fas fa-user-shield text-primary mb-3 fa-2x"></i>
+                <h6 class="fw-bold">Experienced Crews</h6>
+                <p class="small text-muted mb-0">Technicians with minimum 5 years specific hot tap experience.</p>
+             </div>
+          </div>
+          <div class="col-md-3">
+             <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                <i class="fas fa-clipboard-check text-primary mb-3 fa-2x"></i>
+                <h6 class="fw-bold">WPS/PQR</h6>
+                <p class="small text-muted mb-0">Qualified welding procedures for in-service welding.</p>
+             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 Velcorix. All Rights Reserved.</p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center text-white">
+      <div class="container">
+        <h2 class="cta-heading">Avoid Shutdowns</h2>
+        <p class="cta-subtext">
+          Keep your plant running while we make the connections.
+        </p>
+        <a href="../contact.html" class="btn btn-primary btn-lg mt-3"
+          >Get Hot Tapping Quote</a
+        >
+      </div>
+      <div class="footer-divider"></div>
+    </section>
+
+    <!-- Footer -->
+     <footer>
+      <div class="container">
+        <div class="row pt-2 justify-content-between">
+          <!-- Col 1: Logo & Description -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a
+              href="index.html"
+              class="d-flex align-items-center text-decoration-none mb-3"
+            >
+              <img
+                src="../images/logo/velcorix-logo.png"
+                alt="Velcorix Logo"
+                style="height: 40px; margin-right: 10px"
+              />
+              <!-- <h4 class="mb-0 text-white fw-bold" style="letter-spacing: 1px">
+                VELCORIX
+              </h4> -->
+            </a>
+            <p class="text-white-50">
+              Your trusted partner for mechanical trading and consultancy in the
+              UAE. Delivering excellence and innovation in every project.
+            </p>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../about.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Rental Equipments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../contact.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Rentals -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Rentals</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../rentals/generators.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Power Generators</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/welding.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Welding Machines</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/compressors.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Compressors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/hydrotesting.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Hydrotesting Equipment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/cranes.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Cranes & Lifting</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/earth-moving.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Earth Moving</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Services -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Services</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../services/epc.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >EPC</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/pre-commissioning.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Pre-commissioning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../shutdown-management.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Shutdown Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../consultancy-advisory.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Consultancy & Advisory</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/pneumatic-testing.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Pneumatic Testing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/hot-tapping.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Hot Tapping</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/flange-management.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Flange Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/specialised-services.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Oil & Gas Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 5: Contact -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-4">Contact Us</h5>
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE
+            </p>
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-phone me-2"></i> +971 50 123 4567
+            </p>
+            <p class="text-white-50 mb-4">
+              <i class="fas fa-envelope me-2"></i>
+              info@velcorix.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom mt-5 pt-3 border-top border-secondary opacity-75"
+        >
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
+            <p class="mb-3 mb-md-0 text-white-50">
+              &copy; 2026 Velcorix. All Rights Reserved.
+            </p>
+            <!-- Social Links -->
+            <div class="d-flex">
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" class="text-white-50"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

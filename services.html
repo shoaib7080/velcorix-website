@@ -3,27 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Specialized Services - Velcorix</title>
+    <title>Our Services - Velcorix</title>
     <meta
       name="description"
-      content="Velcorix specializes in Oil & Gas pre-commissioning support including hydro testing, pneumatic testing, and crane installation in UAE."
+      content="Comprehensive industrial services including EPC, Shutdown Management, Specialized Engineering, and Manpower solutions in the UAE."
     />
+    <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Google Fonts: Poppins & Open Sans -->
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -114,13 +118,12 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="cranes.html"
+                  <a class="dropdown-item" href="rentals/cranes.html"
                     >Tower Cranes & EOT Cranes</a
                   >
                 </li>
-
                 <li>
-                  <a class="dropdown-item" href="solar-5kw.html"
+                  <a class="dropdown-item" href="rentals/solar-5kw.html"
                     >5kW Solar Power Kit</a
                   >
                 </li>
@@ -320,133 +323,473 @@
       </div>
     </nav>
 
+    <!-- Header (Hero) -->
     <header
       class="bg-dark text-white text-center py-5"
       style="
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url('images/service/service-14.jpg');
+          url('images/service/service-8.jpg');
         background-size: cover;
         background-position: center;
       "
     >
       <div class="container">
-        <h1 class="display-4 fw-bold">Specialized Services</h1>
-        <p class="lead">Oil & Gas Pre-commissioning and Installation Support</p>
+        <h1 class="display-4 fw-bold">Our Services</h1>
+        <p class="lead">Comprehensive Solutions for Industrial Excellence</p>
       </div>
     </header>
 
+    <!-- Intro Section -->
+    <section class="py-5 bg-light">
+      <div class="container text-center">
+        <p class="lead mb-0">
+          Velcorix offers a diverse portfolio of specialized engineering,
+          project management, and manpower services. From simple installations
+          to complex shutdown management, we deliver precision and safety.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
     <section class="section-padding">
       <div class="container">
-        <div class="section-title">
-          <h2>Oil & Gas Pre-commissioning</h2>
-          <p>Ensuring system integrity and readiness before operation.</p>
-        </div>
-
         <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <h4 class="card-title text-primary">
-                  <i class="fas fa-vial me-2"></i> Testing Services
-                </h4>
+          <!-- 1. EPC -->
+          <div class="col-md-4 mb-4">
+            <a href="services/epc.html" class="text-decoration-none text-dark">
+              <div class="service-card text-center h-100">
+                <div class="service-icon">
+                  <i class="fas fa-drafting-compass"></i>
+                </div>
+                <h3>EPC</h3>
                 <p>
-                  We provide comprehensive testing ensuring leak-free and
-                  pressure-resistant piping and vessel systems.
+                  End-to-end Engineering, Procurement, and Construction services
+                  for industrial projects.
                 </p>
-                <ul>
-                  <li>
-                    <strong>Hydro Testing:</strong> High-pressure water testing
-                    for strength and leaks.
-                  </li>
-                  <li>
-                    <strong>Pneumatic Testing:</strong> Air/gas pressure testing
-                    for systems where water is not suitable.
-                  </li>
-                </ul>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col-md-6 mb-4">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body">
-                <h4 class="card-title text-primary">
-                  <i class="fas fa-tools me-2"></i> Equipment Support
-                </h4>
-                <p>
-                  Supply and management of critical pre-commissioning equipment.
-                </p>
-                <ul>
-                  <li>
-                    <strong>Blowers:</strong> High-capacity air movers for
-                    drying and purging.
-                  </li>
-                  <li>
-                    <strong>Flanges & Fittings:</strong> Temporary and permanent
-                    sealing solutions for testing phases.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <hr class="my-5" />
-
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h2 class="text-primary mb-3">Crane Installation</h2>
-            <p>
-              Beyond rental, we offer expert installation services for overhead
-              (EOT) and tower cranes. Our certified teams ensure precise
-              assembly, alignment, and load testing to meet international safety
-              standards.
-            </p>
-            <a href="contact.html" class="btn btn-outline-primary mt-3"
-              >Request Installation</a
+          <!-- 2. Oil & Gas Pre-commissioning -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="services/pre-commissioning.html"
+              class="text-decoration-none text-dark"
             >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-vial"></i></div>
+                <h3>Pre-commissioning</h3>
+                <p>
+                  Comprehensive testing and preparation ensuring systems are
+                  ready for startup.
+                </p>
+              </div>
+            </a>
           </div>
-          <div class="col-lg-6">
-            <img
-              src="images/service/service-12.jpg"
-              alt="Crane Installation"
-              class="img-fluid rounded shadow"
-              onerror="this.src='https://placehold.co/600x400?text=Crane+Installation'"
-            />
+
+          <!-- 3. Shutdown Management -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="shutdown-management.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-power-off"></i></div>
+                <h3>Shutdown Management</h3>
+                <p>
+                  Strategic planning and execution for plant turnarounds and
+                  maintenance outages.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 4. Consultancy & Advisory -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="consultancy-advisory.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                <h3>Consultancy & Advisory</h3>
+                <p>
+                  Expert guidance on operational efficiency, safety compliance,
+                  and project feasibility.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 5. Specialised Services -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="services/specialised-services.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-oil-well"></i></div>
+                <h3>Specialised Services</h3>
+                <p>
+                  Key sectors including Oil & Gas Upstream/Downstream,
+                  Petrochemical, and Offshore.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 6. Flange Management -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="services/flange-management.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-ring"></i></div>
+                <h3>Flange Management</h3>
+                <p>
+                  Integrated bolting solutions: Torqueing, Tensioning,
+                  Machining, and Joint Integrity.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 7. Specialised Manpower -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="services/specialised-manpower.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-users-cog"></i></div>
+                <h3>Specialised Manpower</h3>
+                <p>
+                  Skilled workforce for Shutdowns, Pre-commissioning, Lifting,
+                  and HVAC projects.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 8. Pneumatic Testing -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="services/pneumatic-testing.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-wind"></i></div>
+                <h3>Pneumatic Testing</h3>
+                <p>
+                  Air and nitrogen pressure testing for sensitive piping and
+                  vessel systems.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 9. Hot Tapping -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="services/hot-tapping.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-fire"></i></div>
+                <h3>Hot Tapping</h3>
+                <p>
+                  Safe pipeline intervention and branching without system
+                  shutdown.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 10. Project Management -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="services/project-management.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-tasks"></i></div>
+                <h3>Project Management</h3>
+                <p>
+                  Dedicated oversight to ensure projects are delivered on time
+                  and within budget.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 11. Engineering Construction -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="services/engg-construction.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+                <h3>Engineering Construction</h3>
+                <p>
+                  Civil and mechanical construction services for industrial
+                  infrastructure.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 12. Crane Installation -->
+          <div class="col-md-4 mb-4">
+            <a
+              href="services/crane-installation.html"
+              class="text-decoration-none text-dark"
+            >
+              <div class="service-card text-center h-100">
+                <div class="service-icon"><i class="fas fa-crutch"></i></div>
+                <h3>Crane Installation</h3>
+                <p>
+                  Expert erection, dismantling, and maintenance of Tower and EOT
+                  cranes.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Call to Action -->
+    <section class="cta-section text-white">
+      <div class="container text-center">
+        <h2 class="cta-heading mb-4">Need a Tailored Solution?</h2>
+        <p class="lead">
+          Contact our engineering team to discuss your specific project
+          requirements.
+        </p>
+        <a href="contact.html" class="btn btn-light mt-3">Contact Us</a>
+      </div>
+      <div class="footer-divider"></div>
+    </section>
+
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Velcorix</h5>
-            <p>
+        <div class="row pt-2 justify-content-between">
+          <!-- Col 1: Logo & Description -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a
+              href="index.html"
+              class="d-flex align-items-center text-decoration-none mb-3"
+            >
+              <img
+                src="images/logo/velcorix-logo.png"
+                alt="Velcorix Logo"
+                style="height: 40px; margin-right: 10px"
+              />
+              <!-- <h4 class="mb-0 text-white fw-bold" style="letter-spacing: 1px">
+                VELCORIX
+              </h4> -->
+            </a>
+            <p class="text-white-50">
               Your trusted partner for mechanical trading and consultancy in the
-              UAE.
+              UAE. Delivering excellence and innovation in every project.
             </p>
           </div>
-          <div class="col-md-2">
-            <h5>Quick Links</h5>
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Quick Links</h5>
             <ul class="list-unstyled">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="rentals.html">Rentals</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a
+                  href="index.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="rentals.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Rental Equipments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
-          <div class="col-md-3">
-            <h5>Contact Us</h5>
-            <p>Dubai, UAE</p>
-            <p>info@velcorix.com</p>
+
+          <!-- Col 3: Rentals -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Rentals</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="rentals/generators.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Power Generators</a
+                >
+              </li>
+              <li>
+                <a
+                  href="rentals/welding.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Welding Machines</a
+                >
+              </li>
+              <li>
+                <a
+                  href="rentals/compressors.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Compressors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="rentals/hydrotesting.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Hydrotesting Equipment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="rentals/cranes.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Cranes & Lifting</a
+                >
+              </li>
+              <li>
+                <a
+                  href="rentals/earth-moving.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Earth Moving</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Services -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Services</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="services/epc.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >EPC</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services/pre-commissioning.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Pre-commissioning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="shutdown-management.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Shutdown Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="consultancy-advisory.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Consultancy & Advisory</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services/pneumatic-testing.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Pneumatic Testing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services/hot-tapping.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Hot Tapping</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services/flange-management.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Flange Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services/specialised-services.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Oil & Gas Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 5: Contact -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-4">Contact Us</h5>
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE
+            </p>
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-phone me-2"></i> +971 50 123 4567
+            </p>
+            <p class="text-white-50 mb-4">
+              <i class="fas fa-envelope me-2"></i>
+              info@velcorix.com
+            </p>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 Velcorix. All Rights Reserved.</p>
+
+        <div
+          class="footer-bottom mt-5 pt-3 border-top border-secondary opacity-75"
+        >
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
+            <p class="mb-3 mb-md-0 text-white-50">
+              &copy; 2026 Velcorix. All Rights Reserved.
+            </p>
+            <!-- Social Links -->
+            <div class="d-flex">
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" class="text-white-50"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

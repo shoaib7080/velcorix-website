@@ -3,26 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shutdown Manpower - Velcorix Services</title>
+    <title>Specialised Manpower - Velcorix Services</title>
     <meta
       name="description"
-      content="Specialized manpower for plant shutdowns and turnarounds."
+      content="Expert manpower supply including shutdown, pre-commissioning, lifting, and HAC professionals."
     />
+    <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
@@ -65,8 +70,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Rental Equipments</a
               >
+                Rental Equipments
+              </a>
               <ul class="dropdown-menu" aria-labelledby="rentalDropdown">
                 <li>
                   <a class="dropdown-item fw-bold" href="../rentals.html"
@@ -114,7 +120,6 @@
                     >Tower Cranes & EOT Cranes</a
                   >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="../rentals/solar-5kw.html"
                     >5kW Solar Power Kit</a
@@ -135,8 +140,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Services</a
               >
+                Services
+              </a>
               <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                 <li>
                   <a class="dropdown-item fw-bold" href="../services.html"
@@ -160,6 +166,7 @@
                     >Consultancy & Advisory</a
                   >
                 </li>
+                <!-- Nested Menus -->
                 <li>
                   <a class="dropdown-item" href="#"
                     >Specialised Services &raquo;</a
@@ -254,8 +261,8 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="engg-construction.html"
-                    >Engineering Construction
-                  </a>
+                    >Engineering Construction</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="crane-installation.html"
@@ -273,6 +280,7 @@
       </div>
     </nav>
 
+    <!-- Header (Hero) -->
     <header
       class="bg-dark text-white text-center py-5"
       style="
@@ -283,80 +291,519 @@
       "
     >
       <div class="container">
-        <h1 class="display-4 fw-bold">Shutdown Manpower</h1>
-        <p class="lead">Skilled workforce for critical turnaround projects</p>
+        <h1 class="display-4 fw-bold">Specialised Manpower</h1>
+        <p class="lead">Expert Workforce Solutions for Industry</p>
       </div>
     </header>
 
+    <!-- Overview (Intro) -->
     <section class="section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-6">
             <img
               src="../images/resource/service-details.jpg"
-              class="img-fluid rounded mb-4 w-100"
-              alt="Shutdown Manpower"
-              onerror="this.src='https://placehold.co/800x400?text=Shutdown+Manpower'"
+              class="img-fluid shadow intro-image"
+              alt="Manpower Overview"
+              onerror="this.src='https://placehold.co/800x400?text=Expert+Manpower'"
             />
-            <h3>Turnaround Specialists</h3>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <h2 class="mb-3">The Right People for the Job</h2>
             <p>
-              We supply experienced and certified personnel to ensure your plant
-              shutdowns are completed safely, on time, and within budget.
+              The success of any project relies on the competence and dedication
+              of the workforce. Velcorix specializes in providing highly
+              skilled, certified professionals for the oil & gas, petrochemical,
+              and construction sectors.
             </p>
-            <ul>
-              <li>Planners and Supervisors</li>
-              <li>Mechanical Fitters and Fabricators</li>
-              <li>Welders (TIG/ARC)</li>
-              <li>Safety Officers and Riggers</li>
-            </ul>
-            <div class="mt-4">
-              <a href="../contact.html" class="btn btn-primary"
-                >Request a Quote</a
+            <p>
+              We handle the entire lifecycle of manpower supply—from recruitment
+              and vetting to visa processing and logistics—so you can focus on
+              execution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub-Service Menu (Card Grid) -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Our Manpower Divisions</h2>
+          <p>Specialized teams tailored to your project requirements.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Card 1: Shutdown -->
+          <div class="col-md-6 col-lg-3">
+            <a
+              href="manpower-shutdown.html"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="service-card text-center h-100 bg-white p-4 rounded shadow-sm border-0 transition-hover"
               >
+                <div class="service-icon mb-3">
+                  <i class="fas fa-calendar-times fa-3x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold">Shutdown Manpower</h3>
+                <p class="text-muted small">
+                  Experienced crews for plant turnarounds and maintenance
+                  outages.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2: Pre-commissioning -->
+          <div class="col-md-6 col-lg-3">
+            <a
+              href="manpower-precomm.html"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="service-card text-center h-100 bg-white p-4 rounded shadow-sm border-0 transition-hover"
+              >
+                <div class="service-icon mb-3">
+                  <i class="fas fa-clipboard-check fa-3x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold">Pre-commissioning</h3>
+                <p class="text-muted small">
+                  Specialized teams for system testing, cleaning, and start-up.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3: Lifting -->
+          <div class="col-md-6 col-lg-3">
+            <a
+              href="manpower-lifting.html"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="service-card text-center h-100 bg-white p-4 rounded shadow-sm border-0 transition-hover"
+              >
+                <div class="service-icon mb-3">
+                  <i class="fas fa-arrows-alt-v fa-3x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold">Lifting Manpower</h3>
+                <p class="text-muted small">
+                  Certified riggers and crane operators for heavy lifting.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 4: HAC -->
+          <div class="col-md-6 col-lg-3">
+            <a href="manpower-hac.html" class="text-decoration-none text-dark">
+              <div
+                class="service-card text-center h-100 bg-white p-4 rounded shadow-sm border-0 transition-hover"
+              >
+                <div class="service-icon mb-3">
+                  <i class="fas fa-fan fa-3x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold">HAC Manpower</h3>
+                <p class="text-muted small">
+                  HVAC technicians for industrial climate control systems.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typical Applications -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Typical Real-World Applications</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-hard-hat"></i>
+              </div>
+              <h4>Construction Sites</h4>
+              <p class="small text-muted mb-0">
+                General and specialized labor for civil and mechanical works.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h4>Industrial Plants</h4>
+              <p class="small text-muted mb-0">
+                Staffing for daily operations and routine maintenance.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-ship"></i>
+              </div>
+              <h4>Offshore Projects</h4>
+              <p class="small text-muted mb-0">
+                BOSIET certified personnel for marine environments.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-solar-panel"></i>
+              </div>
+              <h4>Renewable Energy</h4>
+              <p class="small text-muted mb-0">
+                Technicians for solar and wind farm installations.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
+    <!-- Capability Details (How We Do It) -->
+    <section class="section-padding bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Velcorix</h5>
-            <p>
-              Your trusted partner for mechanical trading and consultancy in the
-              UAE.
-            </p>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="mb-4 fw-bold">Why Choose Velcorix?</h2>
+            <div class="bg-white p-4 rounded shadow-sm">
+              <p class="text-muted">
+                We differ from standard recruitment agencies by providing
+                technical leadership and support.
+              </p>
+              <ul class="list-unstyled">
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                  <div>
+                    <strong>Vetting Process:</strong> Rigorous trade tests to
+                    verify skills before deployment.
+                  </div>
+                </li>
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                  <div>
+                    <strong>Welfare:</strong> Commitment to ethical labor
+                    practices ensuring a motivated workforce.
+                  </div>
+                </li>
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                  <div>
+                    <strong>Flexibility:</strong> Ability to scale up or down
+                    rapidly based on project needs.
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-2">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../rentals.html">Rentals</a></li>
-              <li>
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="#"
-                  id="servicesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-              </li>
-              <li><a href="../contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>Contact Us</h5>
-            <p>Dubai, UAE</p>
-            <p>info@velcorix.com</p>
+          <div class="col-lg-6">
+            <img
+              src="../images/background/award-1.jpg"
+              alt="Velcorix Capabilities"
+              class="img-fluid rounded shadow w-100"
+              onerror="this.src='https://placehold.co/600x400?text=Why+Choose+Us'"
+            />
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 Velcorix. All Rights Reserved.</p>
+      </div>
+    </section>
+
+    <!-- Compliance & Support -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Compliance Standards</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div
+              class="bg-white p-3 rounded shadow-sm h-100 text-center border"
+            >
+              <i class="fas fa-file-invoice text-primary mb-3 fa-2x"></i>
+              <h6 class="fw-bold">Labor Law</h6>
+              <p class="small text-muted mb-0">
+                Full compliance with UAE labor regulations.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="bg-white p-3 rounded shadow-sm h-100 text-center border"
+            >
+              <i class="fas fa-user-check text-primary mb-3 fa-2x"></i>
+              <h6 class="fw-bold">ISO 45001</h6>
+              <p class="small text-muted mb-0">
+                Occupational health and safety management systems.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="bg-white p-3 rounded shadow-sm h-100 text-center border"
+            >
+              <i class="fas fa-heartbeat text-primary mb-3 fa-2x"></i>
+              <h6 class="fw-bold">Insurance</h6>
+              <p class="small text-muted mb-0">
+                Comprehensive medical and workmen's compensation.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="bg-white p-3 rounded shadow-sm h-100 text-center border"
+            >
+              <i class="fas fa-hands-helping text-primary mb-3 fa-2x"></i>
+              <h6 class="fw-bold">Support</h6>
+              <p class="small text-muted mb-0">
+                24/7 PRO and administrative support for staff.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center text-white">
+      <div class="container">
+        <h2 class="cta-heading">Build with Confidence</h2>
+        <p class="cta-subtext">
+          Partner with Velcorix for your project manpower needs.
+        </p>
+        <a href="../contact.html" class="btn btn-primary btn-lg mt-3"
+          >Contact Us Today</a
+        >
+      </div>
+      <div class="footer-divider"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row pt-2 justify-content-between">
+          <!-- Col 1: Logo & Description -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a
+              href="index.html"
+              class="d-flex align-items-center text-decoration-none mb-3"
+            >
+              <img
+                src="../images/logo/velcorix-logo.png"
+                alt="Velcorix Logo"
+                style="height: 40px; margin-right: 10px"
+              />
+              <!-- <h4 class="mb-0 text-white fw-bold" style="letter-spacing: 1px">
+                VELCORIX
+              </h4> -->
+            </a>
+            <p class="text-white-50">
+              Your trusted partner for mechanical trading and consultancy in the
+              UAE. Delivering excellence and innovation in every project.
+            </p>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../about.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Rental Equipments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../contact.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Rentals -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Rentals</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../rentals/generators.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Power Generators</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/welding.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Welding Machines</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/compressors.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Compressors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/hydrotesting.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Hydrotesting Equipment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/cranes.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Cranes & Lifting</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/earth-moving.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Earth Moving</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Services -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Services</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../services/epc.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >EPC</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/pre-commissioning.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Pre-commissioning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../shutdown-management.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Shutdown Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../consultancy-advisory.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Consultancy & Advisory</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/pneumatic-testing.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Pneumatic Testing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/hot-tapping.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Hot Tapping</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/flange-management.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Flange Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/specialised-services.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Oil & Gas Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 5: Contact -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-4">Contact Us</h5>
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE
+            </p>
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-phone me-2"></i> +971 50 123 4567
+            </p>
+            <p class="text-white-50 mb-4">
+              <i class="fas fa-envelope me-2"></i>
+              info@velcorix.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom mt-5 pt-3 border-top border-secondary opacity-75"
+        >
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
+            <p class="mb-3 mb-md-0 text-white-50">
+              &copy; 2026 Velcorix. All Rights Reserved.
+            </p>
+            <!-- Social Links -->
+            <div class="d-flex">
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" class="text-white-50"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

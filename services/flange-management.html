@@ -6,23 +6,28 @@
     <title>Flange Management - Velcorix Services</title>
     <meta
       name="description"
-      content="Comprehensive flange management and joint integrity support."
+      content="Comprehensive flange management solutions including torquing, tensioning, and machining."
     />
+    <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
@@ -65,8 +70,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Rental Equipments</a
               >
+                Rental Equipments
+              </a>
               <ul class="dropdown-menu" aria-labelledby="rentalDropdown">
                 <li>
                   <a class="dropdown-item fw-bold" href="../rentals.html"
@@ -114,7 +120,6 @@
                     >Tower Cranes & EOT Cranes</a
                   >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="../rentals/solar-5kw.html"
                     >5kW Solar Power Kit</a
@@ -135,8 +140,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Services</a
               >
+                Services
+              </a>
               <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                 <li>
                   <a class="dropdown-item fw-bold" href="../services.html"
@@ -160,6 +166,7 @@
                     >Consultancy & Advisory</a
                   >
                 </li>
+                <!-- Nested Menus -->
                 <li>
                   <a class="dropdown-item" href="#"
                     >Specialised Services &raquo;</a
@@ -254,8 +261,8 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="engg-construction.html"
-                    >Engineering Construction
-                  </a>
+                    >Engineering Construction</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="crane-installation.html"
@@ -273,6 +280,7 @@
       </div>
     </nav>
 
+    <!-- Header (Hero) -->
     <header
       class="bg-dark text-white text-center py-5"
       style="
@@ -284,79 +292,524 @@
     >
       <div class="container">
         <h1 class="display-4 fw-bold">Flange Management</h1>
-        <p class="lead">Complete Joint Integrity Assurance Solutions</p>
+        <p class="lead">Complete Joint Integrity Solutions</p>
       </div>
     </header>
 
+    <!-- Overview (Intro) -->
     <section class="section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-6">
             <img
               src="../images/resource/service-details.jpg"
-              class="img-fluid rounded mb-4 w-100"
-              alt="Flange Management"
+              class="img-fluid shadow intro-image"
+              alt="Flange Management Overview"
               onerror="this.src='https://placehold.co/800x400?text=Flange+Management'"
             />
-            <h3>Detailed Flange Management</h3>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <h2 class="mb-3">Ensuring Leak-Free Operations</h2>
             <p>
-              Implement a robust flange management system to track every joint
-              from assembly to testing, ensuring leak-free startups.
+              Flange management is the cornerstone of mechanical joint
+              integrity. At Velcorix, we offer a comprehensive suite of services
+              designed to ensure that every bolted connection on your site is
+              leak-free and compliant with international standards.
             </p>
-            <ul>
-              <li>Flange Register and Tagging</li>
-              <li>Joint History Tracking System</li>
-              <li>Technical Support and Supervision</li>
-              <li>QA/QC Documentation</li>
-            </ul>
-            <div class="mt-4">
-              <a href="../contact.html" class="btn btn-primary"
-                >Request a Quote</a
+            <p>
+              Our integrated approach combines field services like torquing and
+              machining with robust engineering management, including tagging,
+              tracking, and certification.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub-Service Menu (Card Grid) - Styled like Rentals.html -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Our Flange Management Services</h2>
+          <p>
+            Explore our specialized range of bolting and machining solutions.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-- Card 1: Bolt Torquing -->
+          <div class="col-md-6 col-lg-3">
+            <a href="bolt-torquing.html" class="text-decoration-none text-dark">
+              <div
+                class="service-card text-center h-100 bg-white p-4 rounded shadow-sm border-0 transition-hover"
               >
+                <div class="service-icon mb-3">
+                  <i class="fas fa-wrench fa-3x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold">Bolt Torquing</h3>
+                <p class="text-muted small">
+                  Precision hydraulic tightening for critical mains and
+                  structural joints.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2: Bolt Tensioning -->
+          <div class="col-md-6 col-lg-3">
+            <a
+              href="bolt-tensioning.html"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="service-card text-center h-100 bg-white p-4 rounded shadow-sm border-0 transition-hover"
+              >
+                <div class="service-icon mb-3">
+                  <i class="fas fa-compress-arrows-alt fa-3x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold">Bolt Tensioning</h3>
+                <p class="text-muted small">
+                  Accurate axial loading for high-pressure and large diameter
+                  bolts.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3: Flange Machining -->
+          <div class="col-md-6 col-lg-3">
+            <a
+              href="flange-machining.html"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="service-card text-center h-100 bg-white p-4 rounded shadow-sm border-0 transition-hover"
+              >
+                <div class="service-icon mb-3">
+                  <i class="fas fa-compact-disc fa-3x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold">Flange Machining</h3>
+                <p class="text-muted small">
+                  On-site facing and restoration of damaged sealing surfaces.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 4: Management & Support -->
+          <div class="col-md-6 col-lg-3">
+            <a
+              href="flange-support.html"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="service-card text-center h-100 bg-white p-4 rounded shadow-sm border-0 transition-hover"
+              >
+                <div class="service-icon mb-3">
+                  <i class="fas fa-tasks fa-3x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold">Management & Support</h3>
+                <p class="text-muted small">
+                  Tagging, database management, and engineering technical
+                  support.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typical Applications -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Typical Real-World Applications</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-industry"></i>
+              </div>
+              <h4>Refinery Turnarounds</h4>
+              <p class="small text-muted mb-0">
+                Large-scale unbolting and rebolting during shutdowns.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-oil-can"></i>
+              </div>
+              <h4>Pipeline Construction</h4>
+              <p class="small text-muted mb-0">
+                Flange assembly for new oil and gas pipelines.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-ship"></i>
+              </div>
+              <h4>Offshore Platforms</h4>
+              <p class="small text-muted mb-0">
+                Maintenance of critical high-pressure topside joints.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-card text-center h-100">
+              <div class="service-icon">
+                <i class="fas fa-wind"></i>
+              </div>
+              <h4>Power Stations</h4>
+              <p class="small text-muted mb-0">
+                Steam turbine casing and valve maintenance.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
+    <!-- Capability Details (How We Do It) -->
+    <section class="section-padding bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Velcorix</h5>
-            <p>
-              Your trusted partner for mechanical trading and consultancy in the
-              UAE.
-            </p>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="mb-4 fw-bold">Why Choose Velcorix?</h2>
+            <div class="bg-white p-4 rounded shadow-sm">
+              <p class="text-muted">
+                We deliver assurance. Our flange management system is designed
+                to give you complete visibility and confidence in your plant's
+                integrity.
+              </p>
+              <ul class="list-unstyled">
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                  <div>
+                    <strong>Certified Technicians:</strong> All personnel are
+                    trained to ECITB MJI10/19 standards.
+                  </div>
+                </li>
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                  <div>
+                    <strong>Tool Availability:</strong> Largest inventory of
+                    hydraulic torque and tensioning tools in the region.
+                  </div>
+                </li>
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="fas fa-check-circle text-primary mt-1 me-3"></i>
+                  <div>
+                    <strong>Digital Reports:</strong> Instant generation of
+                    joint completion certificates for faster QA/QC sign-off.
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-2">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../rentals.html">Rentals</a></li>
-              <li>
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="#"
-                  id="servicesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </a>
-              </li>
-              <li><a href="../contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>Contact Us</h5>
-            <p>Dubai, UAE</p>
-            <p>info@velcorix.com</p>
+          <div class="col-lg-6">
+            <img
+              src="../images/background/award-1.jpg"
+              alt="Velcorix Capabilities"
+              class="img-fluid rounded shadow w-100"
+              onerror="this.src='https://placehold.co/600x400?text=Why+Choose+Us'"
+            />
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 Velcorix. All Rights Reserved.</p>
+      </div>
+    </section>
+
+    <!-- Compliance & Support -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-title">
+          <h2>Compliance Standards</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div
+              class="bg-white p-3 rounded shadow-sm h-100 text-center border"
+            >
+              <i class="fas fa-scroll text-primary mb-3 fa-2x"></i>
+              <h6 class="fw-bold">ASME PCC-1</h6>
+              <p class="small text-muted mb-0">
+                Follows Guidelines for Pressure Boundary Bolted Flange Joint
+                Assembly.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="bg-white p-3 rounded shadow-sm h-100 text-center border"
+            >
+              <i class="fas fa-user-graduate text-primary mb-3 fa-2x"></i>
+              <h6 class="fw-bold">ISO 9001</h6>
+              <p class="small text-muted mb-0">
+                Quality management systems ensuring consistent service delivery.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="bg-white p-3 rounded shadow-sm h-100 text-center border"
+            >
+              <i class="fas fa-clipboard-check text-primary mb-3 fa-2x"></i>
+              <h6 class="fw-bold">API Standards</h6>
+              <p class="small text-muted mb-0">
+                Compliance with relevant API codes for oilfield equipment.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="bg-white p-3 rounded shadow-sm h-100 text-center border"
+            >
+              <i class="fas fa-hard-hat text-primary mb-3 fa-2x"></i>
+              <h6 class="fw-bold">HSE Focused</h6>
+              <p class="small text-muted mb-0">
+                Zero accident philosophy in all high-pressure operations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center text-white">
+      <div class="container">
+        <h2 class="cta-heading">Ready for Zero Gratuity?</h2>
+        <p class="cta-subtext">
+          Achieve leak-free start-ups with Velcorix's expert flange management.
+        </p>
+        <a href="../contact.html" class="btn btn-primary btn-lg mt-3"
+          >Contact Us Today</a
+        >
+      </div>
+      <div class="footer-divider"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row pt-2 justify-content-between">
+          <!-- Col 1: Logo & Description -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a
+              href="index.html"
+              class="d-flex align-items-center text-decoration-none mb-3"
+            >
+              <img
+                src="../images/logo/velcorix-logo.png"
+                alt="Velcorix Logo"
+                style="height: 40px; margin-right: 10px"
+              />
+              <!-- <h4 class="mb-0 text-white fw-bold" style="letter-spacing: 1px">
+                VELCORIX
+              </h4> -->
+            </a>
+            <p class="text-white-50">
+              Your trusted partner for mechanical trading and consultancy in the
+              UAE. Delivering excellence and innovation in every project.
+            </p>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../about.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Rental Equipments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../contact.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Rentals -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Rentals</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../rentals/generators.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Power Generators</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/welding.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Welding Machines</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/compressors.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Compressors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/hydrotesting.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Hydrotesting Equipment</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/cranes.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Cranes & Lifting</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../rentals/earth-moving.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Earth Moving</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Services -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white mb-4">Services</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../services/epc.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >EPC</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/pre-commissioning.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Pre-commissioning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../shutdown-management.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Shutdown Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../consultancy-advisory.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Consultancy & Advisory</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/pneumatic-testing.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Pneumatic Testing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/hot-tapping.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Hot Tapping</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/flange-management.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Flange Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/specialised-services.html"
+                  class="text-white-50 text-decoration-none mb-2 d-block"
+                  >Oil & Gas Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 5: Contact -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-4">Contact Us</h5>
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE
+            </p>
+            <p class="text-white-50 mb-2">
+              <i class="fas fa-phone me-2"></i> +971 50 123 4567
+            </p>
+            <p class="text-white-50 mb-4">
+              <i class="fas fa-envelope me-2"></i>
+              info@velcorix.com
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom mt-5 pt-3 border-top border-secondary opacity-75"
+        >
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+          >
+            <p class="mb-3 mb-md-0 text-white-50">
+              &copy; 2026 Velcorix. All Rights Reserved.
+            </p>
+            <!-- Social Links -->
+            <div class="d-flex">
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a href="#" class="text-white-50 me-3"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a href="#" class="text-white-50"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
