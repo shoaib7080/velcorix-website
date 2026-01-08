@@ -238,7 +238,6 @@ footer a:hover {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  background-color: transparent;
   color: var(--accent-color);
   padding-left: 25px; /* Visual slide effect */
 }
@@ -282,13 +281,25 @@ footer a:hover {
 /* Why Choose Us Section */
 .bg-cover-desaturated {
   position: relative;
+  background: #fff;
+}
+
+.bg-cover-desaturated .section-title {
+  background: #fff;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+
+.bg-cover-desaturated .row {
+  position: relative;
   background-image: var(--bg-img);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding: 50px 0 20px 0;
 }
 
-.bg-cover-desaturated::before {
+.bg-cover-desaturated .row::before {
   content: "";
   position: absolute;
   top: 0;
@@ -299,7 +310,7 @@ footer a:hover {
   z-index: 1;
 }
 
-.bg-cover-desaturated .container {
+.bg-cover-desaturated .row > * {
   position: relative;
   z-index: 2;
 }
@@ -421,7 +432,7 @@ footer a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(11, 42, 60, 0.9); /* 90% opacity */
+  background: rgba(11, 42, 60, 0.75); /* 75% opacity */
   z-index: -1;
 }
 
@@ -527,37 +538,37 @@ footer ul li a:hover {
 @media (max-width: 768px) {
   .hero-section,
   .hero-slider .swiper-slide {
-    height: 50vh; /* Reduced height for mobile */
-    min-height: 400px; /* Ensure reasonable minimum */
+    height: 40vh; /* Further reduced from 50vh */
+    min-height: 300px; /* Reduced from 400px */
   }
 
   .hero-title {
-    font-size: 2rem; /* Smaller font for mobile */
+    font-size: 1.8rem; /* Reduced from 2rem */
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Reduced from 1rem */
   }
 
   .section-padding {
-    padding: 40px 0;
+    padding: 40px 0; /* Reduced from 40px */
   }
 
   .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 20px !important; /* Added padding for spacing */
   }
 
   .section-title h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem; /* Reduced from 1.8rem */
   }
 
-  /* CTA Mobile Adjustments */
   .cta-section {
-    padding: 60px 0;
+    padding: 40px 0; /* Reduced from 60px */
   }
 
   .cta-heading {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduced from 2rem */
   }
 
   .cta-subtext {
@@ -565,7 +576,88 @@ footer ul li a:hover {
   }
 
   .intro-image {
-    height: 250px !important;
+    height: 200px !important; /* Reduced from 250px */
+  }
+
+  .col-lg-6:first-child {
+    margin-bottom: 20px; /* Reduced from 30px */
+  }
+
+  .industry-card {
+    height: 150px; /* Reduced from 200px */
+  }
+
+  .bg-cover-desaturated .row {
+    padding: 15px 0; /* Reduced padding */
+  }
+  /* Our Approach section mobile adjustments */
+  .col-lg-2.col-md-4 {
+    flex: 0 0 50%; /* 2 columns on mobile instead of 6 */
+    max-width: 50%;
+  }
+
+  .col-lg-2.col-md-4 .position-relative {
+    margin-bottom: 20px; /* Reduced spacing */
+  }
+
+  .col-lg-2.col-md-4 .bg-white {
+    width: 60px !important; /* Smaller circles */
+    height: 60px !important;
+  }
+
+  .col-lg-2.col-md-4 .h3 {
+    font-size: 1.5rem !important; /* Smaller numbers */
+  }
+
+  .col-lg-2.col-md-4 h6 {
+    font-size: 0.85rem; /* Smaller text */
+    line-height: 1.2;
+  }
+
+  /* footer  */
+  footer .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer .col-lg-3,
+  footer .col-lg-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  footer h5 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+
+  .footer-bottom {
+    margin-top: 25px !important;
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section,
+  .hero-slider .swiper-slide {
+    height: 35vh;
+    min-height: 280px;
+  }
+
+  .section-title h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
   }
 }
 
