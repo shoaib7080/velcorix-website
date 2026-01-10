@@ -3,7 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
     <title>Contact Us - Velcorix</title>
+    <link rel="canonical" href="https://www.velcorix.com/contact.html" />
+    <meta property="og:title" content="Contact Us - Velcorix" />
+    <meta
+      property="og:description"
+      content="Get in touch with Velcorix for your mechanical trading, consultancy, and equipment rental needs. Contact our team in Dubai for a technical evaluation and quote."
+    />
+    <meta
+      property="og:image"
+      content="https://www.velcorix.com/assets/images/logo/velcorix-logo.png"
+    />
+    <meta property="og:url" content="https://www.velcorix.com/contact.html" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="Get in touch with Velcorix for your mechanical trading, consultancy, and equipment rental needs. Contact our team in Dubai for a technical evaluation and quote."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,7 +41,7 @@
         <a class="navbar-brand" href="index.html">
           <img
             src="assets/images/logo/velcorix-logo.png"
-            alt="Velcorix Logo"
+            alt="Velcorix Mechanical Trading & Consultancy Logo"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"
           />
           <h2
@@ -109,14 +126,19 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="cranes.html"
+                  <a class="dropdown-item" href="rentals/cranes.html"
                     >Tower Cranes & EOT Cranes</a
                   >
                 </li>
 
                 <li>
-                  <a class="dropdown-item" href="solar-5kw.html"
+                  <a class="dropdown-item" href="rentals/solar-5kw.html"
                     >5kW Solar Power Kit</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="rentals/solar-10kw.html"
+                    >10kW Solar Power Kit</a
                   >
                 </li>
                 <li>
@@ -336,7 +358,23 @@
           <div class="col-lg-6 mb-4">
             <div class="p-4 bg-light shadow rounded h-100">
               <h3 class="mb-4 text-primary">Get In Touch</h3>
-              <form>
+              <form method="POST" id="form">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="a3101cef-d9c3-4070-860a-ac480d9851c7"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New enquiry from Velcorix"
+                />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  id=""
+                  style="display: none"
+                />
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
                   <input
@@ -344,6 +382,7 @@
                     class="form-control"
                     id="name"
                     placeholder="Your Name"
+                    name="Name"
                   />
                 </div>
                 <div class="mb-3">
@@ -353,6 +392,7 @@
                     class="form-control"
                     id="email"
                     placeholder="Your Email"
+                    name="Email"
                   />
                 </div>
                 <div class="mb-3">
@@ -362,6 +402,7 @@
                     class="form-control"
                     id="subject"
                     placeholder="Subject"
+                    name="Subject"
                   />
                 </div>
                 <div class="mb-3">
@@ -371,11 +412,13 @@
                     id="message"
                     rows="5"
                     placeholder="Your Message"
+                    name="Message"
                   ></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">
                   Send Message
                 </button>
+                <div id="result"></div>
               </form>
             </div>
           </div>
@@ -443,7 +486,7 @@
             >
               <img
                 src="assets/images/logo/footer-logo.png"
-                alt="Velcorix Logo"
+                alt="Velcorix - Mechanical Trading & Consultancy Footer Logo"
                 style="height: 40px; margin-right: 10px"
               />
               <!-- <h4 class="mb-0 text-white fw-bold" style="letter-spacing: 1px">
@@ -654,5 +697,45 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      const form = document.getElementById("form");
+      const result = document.getElementById("result");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        result.innerHTML = "Please wait...";
+
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: json,
+        })
+          .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+              result.innerHTML = json.message;
+            } else {
+              console.log(response);
+              result.innerHTML = json.message;
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+          })
+          .then(function () {
+            form.reset();
+            setTimeout(() => {
+              result.style.display = "none";
+            }, 3000);
+          });
+      });
+    </script>
   </body>
 </html>
