@@ -94,6 +94,38 @@ h6 {
   color: #fff;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary-color);
+  opacity: 0.75;
+}
+
+/* Hero responsive image layout to avoid CLS */
+.swiper-slide {
+  position: relative;
+  min-height: 60vh;
+  overflow: hidden;
+}
+.hero-picture,
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
 /* Hero Section */
 .hero-section {
   position: relative;
@@ -190,12 +222,12 @@ h6 {
 footer {
   background-color: var(--primary-color);
   color: #fff;
-  padding: 60px 0 20px;
+  padding: 40px 0 15px;
 }
 
 footer h5 {
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-size: 1.2rem;
 }
 
@@ -213,8 +245,8 @@ footer a:hover {
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 40px;
-  padding-top: 20px;
+  margin-top: 25px;
+  padding-top: 15px;
   text-align: center;
   font-size: 0.9rem;
   color: #aaa;
@@ -364,46 +396,6 @@ footer a:hover {
   margin-bottom: 15px; /* Added spacing */
 }
 
-/* Desktop Hover Interaction */
-@media (min-width: 992px) {
-  /* Open dropdown on hover automatically */
-  .nav-item.dropdown:hover > .dropdown-menu {
-    display: block;
-    animation: fadeInUp 0.3s ease forwards;
-  }
-
-  /* Position nested menus correctly to the right */
-  .dropdown-menu .dropdown-submenu {
-    display: none;
-    position: absolute;
-    left: 80%;
-    top: 0;
-    margin-top: 0;
-  }
-
-  /* Show nested menu on hover */
-  /* Targeting the LI parent for stable hover */
-  .dropdown-menu li:hover > .dropdown-submenu {
-    display: block;
-    animation: fadeInUp 0.3s ease forwards;
-  }
-
-  /* Ensure parent LI has relative positioning for the absolute submenu */
-  .dropdown-menu li {
-    position: relative;
-  }
-
-  /* Invisible bridge to prevent menu from closing when moving mouse */
-  .nav-item.dropdown:hover > .dropdown-menu::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    height: 10px;
-  }
-}
-
 /* CTA Revamp */
 .cta-section {
   position: relative;
@@ -473,6 +465,13 @@ footer a:hover {
   font-size: 1.4rem;
 }
 
+.intro-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 /* Footer Divider */
 .footer-divider {
   position: absolute;
@@ -498,8 +497,67 @@ footer ul li a:hover {
   color: var(--accent-color) !important;
 }
 
+/* Desktop Hover Interaction */
+@media (min-width: 992px) {
+  /* Open dropdown on hover automatically */
+  .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    animation: fadeInUp 0.3s ease forwards;
+  }
+
+  /* Position nested menus correctly to the right */
+  .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 80%;
+    top: 0;
+    margin-top: 0;
+  }
+
+  /* Show nested menu on hover */
+  /* Targeting the LI parent for stable hover */
+  .dropdown-menu li:hover > .dropdown-submenu {
+    display: block;
+    animation: fadeInUp 0.3s ease forwards;
+  }
+
+  /* Ensure parent LI has relative positioning for the absolute submenu */
+  .dropdown-menu li {
+    position: relative;
+  }
+
+  /* Invisible bridge to prevent menu from closing when moving mouse */
+  .nav-item.dropdown:hover > .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+  }
+}
+
 /* Mobile Adjustments */
 @media (max-width: 991px) {
+  /* Navbar mobile adjustments */
+  .navbar {
+    padding: 8px 0;
+  }
+
+  .navbar-brand img {
+    max-height: 35px;
+  }
+
+  .navbar-toggler {
+    padding: 4px 8px;
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 6px 15px;
+    font-size: 0.85rem;
+  }
+
   .trust-anchors {
     border-left: none;
     padding-left: 0;
@@ -550,17 +608,35 @@ footer ul li a:hover {
     font-size: 0.9rem; /* Reduced from 1rem */
   }
 
+  .section-padding .row.align-items-center {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-padding .row.align-items-center .col-lg-6:first-child {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
   .section-padding {
-    padding: 40px 0; /* Reduced from 40px */
+    padding: 30px 0;
   }
 
   .section-title {
-    margin-bottom: 0px;
-    padding-bottom: 20px !important; /* Added padding for spacing */
+    margin-bottom: 20px;
+    padding-bottom: 0px !important; /* Added padding for spacing */
   }
 
   .section-title h2 {
     font-size: 1.6rem; /* Reduced from 1.8rem */
+  }
+
+  .mb-4 {
+    margin-bottom: 1rem !important; /* Reduced from 1.5rem */
+  }
+
+  .service-card {
+    padding: 20px; /* Reduced from 30px */
   }
 
   .cta-section {
@@ -588,8 +664,13 @@ footer ul li a:hover {
   }
 
   .bg-cover-desaturated .row {
-    padding: 15px 0; /* Reduced padding */
+    padding: 20px 0; /* Reduced padding */
   }
+
+  .list-unstyled li {
+    margin-bottom: 0.5rem !important;
+  }
+
   /* Our Approach section mobile adjustments */
   .col-lg-2.col-md-4 {
     flex: 0 0 50%; /* 2 columns on mobile instead of 6 */
@@ -640,7 +721,6 @@ footer ul li a:hover {
   }
 
   .footer-bottom {
-    margin-top: 25px !important;
     padding-top: 15px;
   }
 }
@@ -659,13 +739,6 @@ footer ul li a:hover {
   .hero-title {
     font-size: 1.5rem;
   }
-}
-
-.intro-image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
 }
 
 /* Animation Keyframes */

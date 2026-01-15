@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const heroSwiper = new Swiper(".hero-slider", {
       loop: true,
       autoplay: {
-        delay: 5000,
+        delay: 8000,
         disableOnInteraction: false,
       },
       pagination: {
