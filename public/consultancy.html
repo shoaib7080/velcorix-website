@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -46,7 +46,10 @@
           <img
             src="assets/images/logo/velcorix-logo.png"
             alt="Velcorix Logo"
-            onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'block';
+            "
           />
           <h2
             style="
@@ -172,7 +175,9 @@
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="services/epc.html">EPC</a>
+                  <a class="dropdown-item" href="services/epc.html"
+                    >EPC & Construction</a
+                  >
                 </li>
                 <li>
                   <a
@@ -199,13 +204,8 @@
                   >
                   <ul class="dropdown-submenu dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="services/upstream.html"
-                        >Oil & Gas Upstream</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="services/downstream.html"
-                        >Oil & Gas Downstream</a
+                      <a class="dropdown-item" href="upstream-downstream.html"
+                        >ONG Upstream & Downstream</a
                       >
                     </li>
                     <li>
@@ -269,20 +269,6 @@
                     <li>
                       <a
                         class="dropdown-item"
-                        href="services/manpower-shutdown.html"
-                        >Shutdown</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="services/manpower-precomm.html"
-                        >Pre-commissioning</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
                         href="services/manpower-lifting.html"
                         >Lifting</a
                       >
@@ -314,13 +300,7 @@
                     >Project Management Services</a
                   >
                 </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="services/engg-construction.html"
-                    >Engineering Construction
-                  </a>
-                </li>
+
                 <li>
                   <a
                     class="dropdown-item"
@@ -343,8 +323,9 @@
     <header
       class="bg-dark text-white text-center py-5"
       style="
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url('images/service/service-3.jpg');
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url(&quot;images/service/service-3.jpg&quot;);
         background-size: cover;
         background-position: center;
       "
@@ -388,7 +369,10 @@
               src="images/service/service-6.jpg"
               alt="Shutdown Management"
               class="img-fluid rounded shadow"
-              onerror="this.src='https://placehold.co/600x400?text=Shutdown+Management'"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400?text=Shutdown+Management'
+              "
             />
           </div>
         </div>
@@ -423,7 +407,10 @@
             src="images/service/service-9.jpg"
             alt="Maintenance Strategies"
             class="img-fluid rounded shadow"
-            onerror="this.src='https://placehold.co/600x400?text=Maintenance+Strategies'"
+            onerror="
+              this.src =
+                'https://placehold.co/600x400?text=Maintenance+Strategies'
+            "
           />
         </div>
       </div>
