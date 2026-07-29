@@ -48,7 +48,22 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.velcorix.com/consultancy.html</loc>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Specialized Services -->
+  <url>
+    <loc>https://www.velcorix.com/services/specialised-services.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.velcorix.com/services/upstream-downstream.html</loc>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.velcorix.com/services/upstream.html</loc>
     <priority>0.7</priority>
@@ -71,6 +86,11 @@
 
   <!-- Flange Management -->
   <url>
+    <loc>https://www.velcorix.com/services/flange-management.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.velcorix.com/services/bolt-torquing.html</loc>
     <priority>0.6</priority>
   </url>
@@ -91,6 +111,11 @@
   </url>
 
   <!-- Specialized Manpower -->
+  <url>
+    <loc>https://www.velcorix.com/services/specialised-manpower.html</loc>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://www.velcorix.com/services/manpower-shutdown.html</loc>
     <priority>0.6</priority>
@@ -124,11 +149,6 @@
 
   <url>
     <loc>https://www.velcorix.com/services/project-management.html</loc>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://www.velcorix.com/services/engg-construction.html</loc>
     <priority>0.6</priority>
   </url>
 
