@@ -1,0 +1,314 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const meta = {
+  title: "Heavy Earth Moving - Velcorix Rentals",
+  description: "Rent high-performance earth moving machinery in UAE. Velcorix provides certified excavators, wheel loaders, and bulldozers for construction, mining, and infrastructure projects.",
+  canonical: "https://www.velcorix.com/rentals/earth-moving.html",
+  schemas: [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Earth Moving Equipment",
+      "description": "Rent high-performance earth moving machinery in UAE. Velcorix provides certified excavators, wheel loaders, and bulldozers for construction, mining, and infrastructure projects.",
+      "serviceType": "Equipment Rental",
+      "provider": {
+        "@type": "Organization",
+        "name": "Velcorix",
+        "url": "https://www.velcorix.com/"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Arab Emirates"
+      },
+      "url": "https://www.velcorix.com/rentals/earth-moving.html"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.velcorix.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rental Equipments",
+          "item": "https://www.velcorix.com/rentals.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Earth Moving Equipment",
+          "item": "https://www.velcorix.com/rentals/earth-moving.html"
+        }
+      ]
+    }
+  ],
+};
+---
+
+<BaseLayout {...meta}>
+  <!-- Header -->
+      <header class="bg-dark text-white text-center py-5" style="
+          background:
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(&quot;../assets/images/rentals/heavy-earth-mover.jpg&quot;);
+          background-size: cover;
+          background-position: center;
+        ">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Earth Moving Equipment</h1>
+          <p class="lead">
+            Reliable machinery for construction and mining projects
+          </p>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <!-- Intro Section -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="/assets/images/rentals/heavy-earth-mover-2.jpg" class="img-fluid shadow intro-image" alt="Earth Moving Equipment" onerror="
+                  this.src =
+                    'https://placehold.co/800x400?text=Earth+Moving+Equipment'
+                ">
+            </div>
+            <div class="col-lg-6 mb-4">
+              <h2 class="mb-3">Construction Machinery Fleet</h2>
+              <p>
+                Velcorix offers a modern fleet of heavy earth moving equipment to
+                support infrastructure, construction, and mining projects across
+                the region. Our machines are maintained to manufacturer standards
+                for maximum uptime.
+              </p>
+              <p>
+                From site preparation to excavation and material handling, we
+                supply powerful and fuel-efficient machinery operated by
+                experienced certified drivers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Offerings -->
+      <section class="section-padding bg-light">
+        <div class="container">
+          <div class="section-title">
+            <h2>Key Offerings &amp; Scope</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Excavators</h5>
+                  <p class="text-muted mb-0">
+                    From mini excavators to 80-ton heavy diggers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Wheel Loaders</h5>
+                  <p class="text-muted mb-0">
+                    High-capacity buckets for material loading
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Bulldozers</h5>
+                  <p class="text-muted mb-0">
+                    Powerful dozers for leveling and grading
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Backhoes &amp; Dumpers</h5>
+                  <p class="text-muted mb-0">
+                    Versatile machiness for general site works
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Typical Applications -->
+          <section class="section-padding">
+            <div class="container">
+              <div class="section-title">
+                <h2>Typical Real-World Applications</h2>
+              </div>
+              <div class="row g-4">
+                <div class="col-md-3">
+                  <div class="service-card text-center h-100">
+                    <div class="service-icon">
+                      <i class="fas fa-road"></i>
+                    </div>
+                    <h4>Infrastructure</h4>
+                    <p class="small text-muted mb-0">
+                      Road building and civil engineering works.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="service-card text-center h-100">
+                    <div class="service-icon">
+                      <i class="fas fa-building"></i>
+                    </div>
+                    <h4>Construction</h4>
+                    <p class="small text-muted mb-0">
+                      Foundation excavation and site preparation.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="service-card text-center h-100">
+                    <div class="service-icon">
+                      <i class="fas fa-gem"></i>
+                    </div>
+                    <h4>Mining</h4>
+                    <p class="small text-muted mb-0">
+                      Overburden removal and mineral extraction.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="service-card text-center h-100">
+                    <div class="service-icon">
+                      <i class="fas fa-truck-monster"></i>
+                    </div>
+                    <h4>Quarrying</h4>
+                    <p class="small text-muted mb-0">
+                      Aggregates handling and stockpile management.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Specifications -->
+          <section class="section-padding bg-light">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <h2 class="mb-4 fw-bold">Technical Specifications</h2>
+                  <div class="table-responsive shadow-sm bg-white p-0 rounded overflow-hidden">
+                    <table class="table table-bordered mb-0">
+                      <tbody>
+                        <tr>
+                          <th class="bg-primary text-white w-25">
+                            Operating Weight
+                          </th>
+                          <td>2 Tons - 80 Tons</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Bucket Capacity</th>
+                          <td>0.5m³ - 5.0m³</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Reach Depth</th>
+                          <td>Up to 18 meters (Long Reach)</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Engine Power</th>
+                          <td>50HP - 500HP</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Attachments</th>
+                          <td>Breaker, Auger, Grapple, Crusher Bucket</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <img src="/assets/images/rentals/heavy-earth-mover-3.webp" alt="Earth Moving Specs" class="img-fluid rounded shadow w-100" onerror="
+                      this.src =
+                        'https://placehold.co/600x400?text=Specifications'
+                    ">
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Compliance & Support -->
+          <section class="section-padding">
+            <div class="container">
+              <div class="section-title">
+                <h2>Compliance &amp; Support</h2>
+              </div>
+              <div class="row g-4">
+                <div class="col-md-3">
+                  <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                    <i class="fas fa-file-contract text-primary mb-3 fa-2x"></i>
+                    <h6 class="fw-bold">Operator Certified</h6>
+                    <p class="small text-muted mb-0">
+                      All operators hold valid licenses and safety certifications.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                    <i class="fas fa-wrench text-primary mb-3 fa-2x"></i>
+                    <h6 class="fw-bold">Field Service</h6>
+                    <p class="small text-muted mb-0">
+                      Mobile mechanics available 24/7 for on-site repairs and
+                      maintenance.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                    <i class="fas fa-clock text-primary mb-3 fa-2x"></i>
+                    <h6 class="fw-bold">Fuel Efficiency</h6>
+                    <p class="small text-muted mb-0">
+                      Modern fleet ensures lower fuel consumption and emissions.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                    <i class="fas fa-shield-alt text-primary mb-3 fa-2x"></i>
+                    <h6 class="fw-bold">Safety Features</h6>
+                    <p class="small text-muted mb-0">
+                      Equipped with ROPS/FOPS cabins, cameras, and alarms.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="cta-section text-center text-white">
+            <div class="container">
+              <h2 class="cta-heading">Build with Strength</h2>
+              <p class="cta-subtext">
+                Rent heavy duty construction machinery for your project.
+              </p>
+              <a href="/contact.html" class="btn btn-primary btn-lg mt-3">Request a Quote</a>
+            </div>
+            <div class="footer-divider"></div>
+          </section>
+
+          </div></section>
+</BaseLayout>

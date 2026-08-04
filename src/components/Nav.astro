@@ -1,0 +1,159 @@
+---
+// Site navigation. Edited once here, rendered on every page.
+---
+
+<nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/assets/images/logo/velcorix-logo.png" alt="Velcorix Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+          <h2 style="
+              display: none;
+              font-weight: bold;
+              color: var(--primary-color);
+            ">
+            VELCORIX
+          </h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/rentals.html" id="rentalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Rental Equipments
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="rentalDropdown">
+                <li>
+                  <a class="dropdown-item fw-bold" href="/rentals.html">All Rental Equipments</a>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="/rentals/generators.html">Power Generators</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/rentals/welding.html">Welding Machines</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/rentals/compressors.html">Compressors</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/rentals/hydrotesting.html">Hydrotesting Equipments</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/rentals/tube-shell.html">Tube &amp; Shell Heat Exchangers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/rentals/binder-pullers.html">Binder Pullers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/rentals/earth-moving.html">Heavy Earth Moving Equipments</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/rentals/cranes.html">Tower Cranes &amp; EOT Cranes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/rentals/solar-5kw.html">5kW Solar Power Kit</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/rentals/solar-10kw.html">10kW Solar Power Kit</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li>
+                  <a class="dropdown-item fw-bold" href="/services.html">All Services</a>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/services/epc.html">EPC</a></li>
+                <li>
+                  <a class="dropdown-item" href="/services/pre-commissioning.html">Oil &amp; Gas Pre-commissioning</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/shutdown-management.html">Shutdown Management</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/consultancy-advisory.html">Consultancy &amp; Advisory</a>
+                </li>
+                <!-- Nested Menus -->
+                <li>
+                  <a class="dropdown-item" href="#">Specialised Services »</a>
+                  <ul class="dropdown-submenu dropdown-menu">
+                    <li><a class="dropdown-item" href="/services/upstream-downstream.html">ONG Upstream &amp; Downstream</a></li>
+                    <li>
+                      <a class="dropdown-item" href="/services/petrochemical.html">Petrochemical</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/services/offshore.html">Offshore</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Flange Management »</a>
+                  <ul class="dropdown-submenu dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/services/bolt-torquing.html">Bolt Torquing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/services/bolt-tensioning.html">Bolt Tensioning</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/services/flange-machining.html">Flange Machining</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/services/flange-support.html">Management &amp; Support</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Specialised Manpower »</a>
+                  <ul class="dropdown-submenu dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/services/manpower-shutdown.html">Shutdown</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/services/manpower-precomm.html">Pre-commissioning</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/services/manpower-lifting.html">Lifting</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/services/manpower-hac.html">HAC</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services/pneumatic-testing.html">Pneumatic Testing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services/hot-tapping.html">Hot Tapping</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services/project-management.html">Project Management Services</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services/engg-construction.html">Engineering Construction</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/services/crane-installation.html">Crane Installation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="/contact.html" class="btn btn-primary ms-3">Get a Quote</a>
+        </div>
+      </div>
+    </nav>

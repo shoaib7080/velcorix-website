@@ -1,0 +1,287 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const meta = {
+  title: "Cranes - Velcorix Rentals",
+  description: "Safe and certified lifting solutions with Tower and EOT cranes. Velcorix offers high-capacity crane rentals and expert rigging services for UAE construction and industrial sites.",
+  canonical: "https://www.velcorix.com/rentals/cranes.html",
+  schemas: [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Cranes & Lifting",
+      "description": "Safe and certified lifting solutions with Tower and EOT cranes. Velcorix offers high-capacity crane rentals and expert rigging services for UAE construction and industrial sites.",
+      "serviceType": "Equipment Rental",
+      "provider": {
+        "@type": "Organization",
+        "name": "Velcorix",
+        "url": "https://www.velcorix.com/"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Arab Emirates"
+      },
+      "url": "https://www.velcorix.com/rentals/cranes.html"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.velcorix.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rental Equipments",
+          "item": "https://www.velcorix.com/rentals.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cranes & Lifting",
+          "item": "https://www.velcorix.com/rentals/cranes.html"
+        }
+      ]
+    }
+  ],
+};
+---
+
+<BaseLayout {...meta}>
+  <!-- Header -->
+      <header class="bg-dark text-white text-center py-5" style="
+          background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../assets/images/rentals/cranes-2.jpg');
+          background-size: cover;
+          background-position: center;
+        ">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Cranes &amp; Lifting</h1>
+          <p class="lead">Safe and certified lifting solutions</p>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <!-- Intro Section -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="/assets/images/rentals/cranes.webp" class="img-fluid shadow intro-image" alt="Cranes" onerror="this.src='https://placehold.co/800x400?text=Cranes'">
+            </div>
+            <div class="col-lg-6 mb-4">
+              <h2 class="mb-3">Tower &amp; EOT Cranes</h2>
+              <p>
+                Velcorix supplies a robust range of cranes for vertical construction,
+                infrastructure projects, and industrial warehousing. Our lifting solutions 
+                are certified for safety and performance.
+              </p>
+              <p>
+                From self-erecting tower cranes for tight city sites to heavy-duty 
+                EOT cranes for manufacturing facilities, we ensure your lifting 
+                operations are efficient and compliant with all local safety regulations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Offerings -->
+      <section class="section-padding bg-light">
+        <div class="container">
+          <div class="section-title">
+            <h2>Key Offerings &amp; Scope</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Tower Cranes</h5>
+                  <p class="text-muted mb-0">Self-erecting and hammerhead models for construction</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">EOT Cranes</h5>
+                  <p class="text-muted mb-0">Electric Overhead Traveling cranes for workshops</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Gantry Cranes</h5>
+                  <p class="text-muted mb-0">Portable and rail-mounted gantry solutions</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+               <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Rigging Services</h5>
+                  <p class="text-muted mb-0">Full range of certified lifting accessories and support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      
+      </section>
+
+      <!-- Typical Applications -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-title">
+            <h2>Typical Real-World Applications</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-3">
+              <div class="service-card text-center h-100">
+                <div class="service-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h4>Construction</h4>
+                <p class="small text-muted mb-0">
+                  High-rise building materials handling.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service-card text-center h-100">
+                <div class="service-icon">
+                  <i class="fas fa-ship"></i>
+                </div>
+                <h4>Ports &amp; Logistics</h4>
+                <p class="small text-muted mb-0">
+                  Container loading and heavy cargo movement.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service-card text-center h-100">
+                <div class="service-icon">
+                  <i class="fas fa-industry"></i>
+                </div>
+                <h4>Manufacturing</h4>
+                <p class="small text-muted mb-0">
+                  Assembly line and machinery positioning.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service-card text-center h-100">
+                <div class="service-icon">
+                  <i class="fas fa-road"></i>
+                </div>
+                <h4>Infrastructure</h4>
+                <p class="small text-muted mb-0">
+                  Bridge segment lifting and placement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Specifications -->
+      <section class="section-padding bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-6">
+                  <h2 class="mb-4 fw-bold">Technical Specifications</h2>
+                  <div class="table-responsive shadow-sm bg-white p-0 rounded overflow-hidden">
+                    <table class="table table-bordered mb-0">
+                      <tbody>
+                        <tr>
+                          <th class="bg-primary text-white w-25">Capacity</th>
+                          <td>2 Ton - 50 Ton</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Max Reach/Span</th>
+                          <td>Up to 80m (Tower) / 40m (EOT)</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Power Source</th>
+                          <td>Electric (Grid/Generator)</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Control Type</th>
+                          <td>Cabin, Pendant, or Wireless Remote</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Height Under Hook</th>
+                          <td>Customizable to project height</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                   <img src="/assets/images/rentals/cranes-2.jpg" alt="Crane Specs" class="img-fluid rounded shadow w-100" onerror="this.src='https://placehold.co/600x400?text=Specifications'">
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Compliance & Support -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-title">
+              <h2>Compliance &amp; Support</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-3">
+               <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                  <i class="fas fa-shield-alt text-primary mb-3 fa-2x"></i>
+                  <h6 class="fw-bold">Certified Equipment</h6>
+                  <p class="small text-muted mb-0">All cranes comply with international lifting standards and third-party certifications.</p>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                  <i class="fas fa-truck-loading text-primary mb-3 fa-2x"></i>
+                  <h6 class="fw-bold">Erection &amp; Dismantling</h6>
+                  <p class="small text-muted mb-0">Complete team support for safe crane erection, jacking, and dismantling.</p>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                  <i class="fas fa-clipboard-check text-primary mb-3 fa-2x"></i>
+                  <h6 class="fw-bold">Operator Supply</h6>
+                  <p class="small text-muted mb-0">We can provide certified crane operators and riggers for your project.</p>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                  <i class="fas fa-tools text-primary mb-3 fa-2x"></i>
+                  <h6 class="fw-bold">Maintenance</h6>
+                  <p class="small text-muted mb-0">Routine inspections and breakdown support to ensure lift safety.</p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section text-center text-white">
+        <div class="container">
+          <h2 class="cta-heading">Heavy Lifting Made Easy</h2>
+          <p class="cta-subtext">
+            Get the right crane for your heavy lifting requirements today.
+          </p>
+          <a href="/contact.html" class="btn btn-primary btn-lg mt-3">Request a Quote</a>
+        </div>
+        <div class="footer-divider"></div>
+      </section>
+</BaseLayout>

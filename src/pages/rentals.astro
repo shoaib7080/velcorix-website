@@ -1,0 +1,212 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const meta = {
+  title: "Rental Equipments - Velcorix",
+  description: "Certified equipment rentals in UAE. Velcorix provides generators, welding machines, cranes, and specialized industrial tools for oil & gas and construction projects.",
+  canonical: "https://www.velcorix.com/rentals.html",
+  schemas: [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.velcorix.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rental Equipments",
+          "item": "https://www.velcorix.com/rentals.html"
+        }
+      ]
+    }
+  ],
+};
+---
+
+<BaseLayout {...meta}>
+  <header class="bg-dark text-white text-center py-5" style="
+          background:
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(&quot;images/service/service-8.jpg&quot;);
+          background-size: cover;
+          background-position: center;
+        ">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Industrial Equipment Rentals UAE</h1>
+          <p class="lead">Premium Industrial Machinery for Your Projects</p>
+        </div>
+      </header>
+
+      <section class="py-5 bg-light">
+        <div class="container text-center">
+          <p class="lead mb-0">
+            Velcorix provides certified, well-maintained rental equipment for
+            shutdowns, commissioning, and industrial operations across the UAE,
+            including Dubai Industrial City, Abu Dhabi and Jebel Ali.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-padding">
+        <div class="container">
+          <div class="row">
+            <!-- Power Generators -->
+            <div class="col-md-4 mb-4">
+              <a href="/rentals/generators.html" class="text-decoration-none text-dark">
+                <div class="service-card text-center h-100">
+                  <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                  <h3>Power Generators</h3>
+                  <p>
+                    Reliable power generation solutions for sites of all sizes.
+                    From portable units to heavy-duty industrial generators.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- Welding Equipments -->
+            <div class="col-md-4 mb-4">
+              <a href="/rentals/welding.html" class="text-decoration-none text-dark">
+                <div class="service-card text-center h-100">
+                  <div class="service-icon"><i class="fas fa-burn"></i></div>
+                  <h3>Welding Equipments</h3>
+                  <p>
+                    Advanced welding machines and accessories for precise and
+                    durable fabrication work.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- Tube Bundles -->
+            <div class="col-md-4 mb-4">
+              <a href="/rentals/tube-shell.html" class="text-decoration-none text-dark">
+                <div class="service-card text-center h-100">
+                  <div class="service-icon"><i class="fas fa-industry"></i></div>
+                  <h3>Tube Bundles</h3>
+                  <p>
+                    High-quality tube bundles for heat exchangers and industrial
+                    cooling specificaitons.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- Heavy Earth Moving Equipments -->
+            <div class="col-md-4 mb-4">
+              <a href="/rentals/earth-moving.html" class="text-decoration-none text-dark">
+                <div class="service-card text-center h-100">
+                  <div class="service-icon">
+                    <i class="fas fa-truck-monster"></i>
+                  </div>
+                  <h3>Heavy Earth Moving</h3>
+                  <p>
+                    Excavators, bulldozers, and loaders designed for heavy-duty
+                    construction and mining operations.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- Heavy Duty Compressors -->
+            <div class="col-md-4 mb-4">
+              <a href="/rentals/compressors.html" class="text-decoration-none text-dark">
+                <div class="service-card text-center h-100">
+                  <div class="service-icon"><i class="fas fa-wind"></i></div>
+                  <h3>Heavy Duty Compressors</h3>
+                  <p>
+                    Industrial air compressors offering high performance for
+                    pneumatic tools and plant air systems.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- Tower Cranes & EOT Cranes -->
+            <div class="col-md-4 mb-4">
+              <a href="/rentals/cranes.html" class="text-decoration-none text-dark">
+                <div class="service-card text-center h-100">
+                  <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+                  <h3>Cranes &amp; Lifting</h3>
+                  <p>
+                    Tower cranes and EOT cranes available for rent to manage your
+                    heavy lifting requirements safely.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- Special Purpose Machines -->
+            <!-- Hydrotesting Equipments -->
+            <div class="col-md-4 mb-4">
+              <a href="/rentals/hydrotesting.html" class="text-decoration-none text-dark">
+                <div class="service-card text-center h-100">
+                  <div class="service-icon"><i class="fas fa-water"></i></div>
+                  <h3>Hydrotesting Equipments</h3>
+                  <p>
+                    Certified pumps, hoses, and accessories for pipeline and
+                    vessel testing.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- Binder Pullers -->
+            <div class="col-md-4 mb-4">
+              <a href="/rentals/binder-pullers.html" class="text-decoration-none text-dark">
+                <div class="service-card text-center h-100">
+                  <div class="service-icon"><i class="fas fa-tools"></i></div>
+                  <h3>Binder Pullers</h3>
+                  <p>
+                    Specialized binder pullers for efficient bundle extraction and
+                    maintenance.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- 5kW Solar Power Kit -->
+            <div class="col-md-4 mb-4">
+              <a href="/rentals/solar-5kw.html" class="text-decoration-none text-dark">
+                <div class="service-card text-center h-100">
+                  <div class="service-icon">
+                    <i class="fas fa-solar-panel"></i>
+                  </div>
+                  <h3>5kW Solar Power Kit</h3>
+                  <p>
+                    Compact solar power solutions for off-grid lighting and small
+                    equipment.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <!-- 10kW Solar Power Kit -->
+            <div class="col-md-4 mb-4">
+              <a href="/rentals/solar-10kw.html" class="text-decoration-none text-dark">
+                <div class="service-card text-center h-100">
+                  <div class="service-icon">
+                    <i class="fas fa-solar-panel"></i>
+                  </div>
+                  <h3>10kW Solar Power Kit</h3>
+                  <p>
+                    Powerful solar kits for larger site requirements and
+                    sustainable energy.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta-section text-white">
+        <div class="container text-center">
+          <h2 class="cta-heading mb-4">
+            Need Help Selecting the Right Equipment?
+          </h2>
+          <p class="lead">
+            Our team can assist with technical selection and availability.
+          </p>
+          <a href="/contact.html" class="btn btn-light mt-3">Contact Us</a>
+        </div>
+        <div class="footer-divider"></div>
+      </section>
+</BaseLayout>

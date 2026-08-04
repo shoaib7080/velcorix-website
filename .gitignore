@@ -10,3 +10,7 @@ node_modules/
 *.swp
 .DS_Store
 Thumbs.db
+
+# Astro build output
+dist/
+.astro/

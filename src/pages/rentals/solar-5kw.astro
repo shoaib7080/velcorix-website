@@ -1,0 +1,287 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const meta = {
+  title: "5kW Solar Kit - Velcorix Rentals",
+  description: "Rent 5kW solar power kits for remote sites and off-grid projects in UAE. Velcorix provides complete, portable renewable energy solutions with battery backup.",
+  canonical: "https://www.velcorix.com/rentals/solar-5kw.html",
+  schemas: [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "5kW Solar Power Kit",
+      "description": "Rent 5kW solar power kits for remote sites and off-grid projects in UAE. Velcorix provides complete, portable renewable energy solutions with battery backup.",
+      "serviceType": "Equipment Rental",
+      "provider": {
+        "@type": "Organization",
+        "name": "Velcorix",
+        "url": "https://www.velcorix.com/"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Arab Emirates"
+      },
+      "url": "https://www.velcorix.com/rentals/solar-5kw.html"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.velcorix.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Rental Equipments",
+          "item": "https://www.velcorix.com/rentals.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "5kW Solar Power Kit",
+          "item": "https://www.velcorix.com/rentals/solar-5kw.html"
+        }
+      ]
+    }
+  ],
+};
+---
+
+<BaseLayout {...meta}>
+  <!-- Header -->
+      <header class="bg-dark text-white text-center py-5" style="
+          background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../assets/images/rentals/solar.jpg');
+          background-size: cover;
+          background-position: center;
+        ">
+        <div class="container">
+          <h1 class="display-4 fw-bold">5kW Solar Power Kit</h1>
+          <p class="lead">Portable and efficient renewable energy solutions</p>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <!-- Intro Section -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="/assets/images/rentals/solar5kw.jpg" class="img-fluid shadow intro-image" alt="5kW Solar Kit" onerror="this.src='https://placehold.co/800x400?text=Solar+Kit'">
+            </div>
+            <div class="col-lg-6 mb-4">
+              <h2 class="mb-3">Sustainable Power Solution</h2>
+              <p>
+                Our 5kW Solar Power Kit is a complete, ready-to-deploy renewable energy 
+                solution tailored for off-grid sites, construction cabins, and backup 
+                power requirements. It reduces reliance on diesel generators and cuts 
+                fuel costs significantly.
+              </p>
+              <p>
+                Designed for ease of installation and transport, this kit provides 
+                reliable electricity with minimal maintenance, supporting your 
+                sustainability goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Offerings -->
+      <section class="section-padding bg-light">
+        <div class="container">
+          <div class="section-title">
+            <h2>Key Features</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">High Efficiency Panels</h5>
+                  <p class="text-muted mb-0">Monocrystalline modules for maximum output</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Hybrid Inverter</h5>
+                  <p class="text-muted mb-0">Smart inverter managing solar and battery power</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Battery Storage</h5>
+                  <p class="text-muted mb-0">Reliable backup for night-time operation</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+               <div class="d-flex align-items-start">
+                <i class="fas fa-circle text-primary mt-2 me-3" style="font-size: 0.5rem;"></i>
+                <div>
+                  <h5 class="fw-bold mb-1">Plug &amp; Play</h5>
+                  <p class="text-muted mb-0">Pre-wired components for quick setup</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      
+      </section>
+
+      <!-- Typical Applications -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-title">
+            <h2>Typical Real-World Applications</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-3">
+              <div class="service-card text-center h-100">
+                <div class="service-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <h4>Site Offices</h4>
+                <p class="small text-muted mb-0">
+                  Powering lights, computers, and AC units.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service-card text-center h-100">
+                <div class="service-icon">
+                  <i class="fas fa-broadcast-tower"></i>
+                </div>
+                <h4>Telecom</h4>
+                <p class="small text-muted mb-0">
+                  Reliable power for remote communication towers.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service-card text-center h-100">
+                <div class="service-icon">
+                  <i class="fas fa-campground"></i>
+                </div>
+                <h4>Remote Camps</h4>
+                <p class="small text-muted mb-0">
+                  Electricity for staff accommodation in off-grid areas.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service-card text-center h-100">
+                <div class="service-icon">
+                  <i class="fas fa-plug"></i>
+                </div>
+                <h4>Backup Power</h4>
+                <p class="small text-muted mb-0">
+                  Emergency power for critical small loads.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Specifications -->
+      <section class="section-padding bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-6">
+                  <h2 class="mb-4 fw-bold">Technical Specifications</h2>
+                  <div class="table-responsive shadow-sm bg-white p-0 rounded overflow-hidden">
+                    <table class="table table-bordered mb-0">
+                      <tbody>
+                        <tr>
+                          <th class="bg-primary text-white w-25">System Capacity</th>
+                          <td>5 kWp</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Daily Generation</th>
+                          <td>~ 20 - 25 kWh (avg)</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Inverter Rating</th>
+                          <td>5 kVA Hybrid</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Battery Bank</th>
+                          <td>48V (Lead Acid / Lithium Ion)</td>
+                        </tr>
+                        <tr>
+                          <th class="bg-primary text-white">Mounting</th>
+                          <td>Roof / Ground Mount Structure</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                   <img src="/assets/images/rentals/solar5kw-2.jpg" alt="Solar Specs" class="img-fluid rounded shadow w-100" onerror="this.src='https://placehold.co/600x400?text=Specifications'">
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Compliance & Support -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-title">
+              <h2>Compliance &amp; Support</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-3">
+               <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                  <i class="fas fa-leaf text-primary mb-3 fa-2x"></i>
+                  <h6 class="fw-bold">Eco-Friendly</h6>
+                  <p class="small text-muted mb-0">Zero emissions and silent operation tailored for green initiatives.</p>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                  <i class="fas fa-tools text-primary mb-3 fa-2x"></i>
+                  <h6 class="fw-bold">Installation</h6>
+                  <p class="small text-muted mb-0">Technical team handles complete installation and commissioning.</p>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                  <i class="fas fa-chart-line text-primary mb-3 fa-2x"></i>
+                  <h6 class="fw-bold">Monitoring</h6>
+                  <p class="small text-muted mb-0">Optional remote monitoring to track system performance and savings.</p>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="bg-white p-3 rounded shadow-sm h-100 text-center border">
+                  <i class="fas fa-shield-alt text-primary mb-3 fa-2x"></i>
+                  <h6 class="fw-bold">Warranty</h6>
+                  <p class="small text-muted mb-0">Full maintenance support and replacement of faulty components.</p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section text-center text-white">
+        <div class="container">
+          <h2 class="cta-heading">Switch to Green Energy</h2>
+          <p class="cta-subtext">
+            Rent a 5kW Solar Power Kit and reduce your carbon footprint today.
+          </p>
+          <a href="/contact.html" class="btn btn-primary btn-lg mt-3">Request a Quote</a>
+        </div>
+        <div class="footer-divider"></div>
+      </section>
+</BaseLayout>

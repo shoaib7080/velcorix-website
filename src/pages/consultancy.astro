@@ -1,0 +1,218 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const meta = {
+  title: "Velcorix - Consultancy Services",
+  description: "Strategic mechanical consultancy services for industrial projects in UAE. Velcorix specializes in shutdown management, maintenance planning, and technical advisory.",
+  canonical: "https://www.velcorix.com/consultancy.html",
+  schemas: [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Consultancy Services",
+      "description": "Strategic mechanical consultancy services for industrial projects in UAE. Velcorix specializes in shutdown management, maintenance planning, and technical advisory.",
+      "serviceType": "Consultancy Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Velcorix",
+        "url": "https://www.velcorix.com/"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Arab Emirates"
+      },
+      "url": "https://www.velcorix.com/consultancy.html"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.velcorix.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.velcorix.com/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Consultancy Services",
+          "item": "https://www.velcorix.com/consultancy.html"
+        }
+      ]
+    }
+  ],
+};
+---
+
+<BaseLayout {...meta}>
+  <header class="bg-dark text-white text-center py-5" style="
+          background:
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(&quot;images/service/service-3.jpg&quot;);
+          background-size: cover;
+          background-position: center;
+        ">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Consultancy Services</h1>
+          <p class="lead">
+            Strategic Engineering Solutions for Complex Challenges
+          </p>
+        </div>
+      </header>
+
+      <section class="section-padding">
+        <div class="container">
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+              <h2 class="text-primary mb-3">Shutdown Management</h2>
+              <p>
+                Efficient shutdown management is critical for minimizing downtime
+                and ensuring safety. Our experts plan and execute plant shutdowns
+                with precision, ensuring all maintenance tasks are completed
+                within the schedule and budget.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li>
+                  <i class="fas fa-check-circle text-secondary me-2"></i>
+                  Comprehensive Planning &amp; Scheduling
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary me-2"></i> Resource
+                  Allocation
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary me-2"></i> Rise
+                  Assessment &amp; Mitigation
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <img src="/images/service/service-6.jpg" alt="Shutdown Management" class="img-fluid rounded shadow" onerror="
+                  this.src =
+                    'https://placehold.co/600x400?text=Shutdown+Management'
+                ">
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center flex-row-reverse mb-5">
+          <div class="col-lg-6">
+            <h2 class="text-primary mb-3">Maintenance Strategies</h2>
+            <p>
+              Moving from reactive to proactive maintenance requires a robust
+              strategy. We help you develop and implement reliability-centered
+              maintenance (RCM) programs to extend asset life and improve
+              operational efficiency.
+            </p>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <i class="fas fa-check-circle text-secondary me-2"></i>
+                Preventive Maintenance Protocols
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-secondary me-2"></i> Asset
+                Integrity Management
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-secondary me-2"></i> Cost
+                Optimization
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <img src="/images/service/service-9.jpg" alt="Maintenance Strategies" class="img-fluid rounded shadow" onerror="
+                this.src =
+                  'https://placehold.co/600x400?text=Maintenance+Strategies'
+              ">
+          </div>
+        </div>
+
+        <!-- Additional Consultancy Services -->
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="text-primary">Corporate Consultancy</h2>
+            <p>Holistic business solutions to drive growth and efficiency.</p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-chess-knight fa-3x text-secondary mb-3"></i>
+                <h4 class="card-title">Strategy Consulting</h4>
+                <p class="card-text">
+                  Developing long-term goals and strategic plans to navigate
+                  market shifts and seize new opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-chart-line fa-3x text-secondary mb-3"></i>
+                <h4 class="card-title">Operations Consulting</h4>
+                <p class="card-text">
+                  Optimizing internal processes and supply chains to improve
+                  productivity and reduce operational costs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-coins fa-3x text-secondary mb-3"></i>
+                <h4 class="card-title">Financial Consulting</h4>
+                <p class="card-text">
+                  Expert financial analysis, risk management, and investment
+                  planning to ensure fiscal health.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-laptop-code fa-3x text-secondary mb-3"></i>
+                <h4 class="card-title">IT Consulting</h4>
+                <p class="card-text">
+                  Leveraging technology to solve business problems, including
+                  digital transformation and systems integration.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-users fa-3x text-secondary mb-3"></i>
+                <h4 class="card-title">HR Consulting</h4>
+                <p class="card-text">
+                  Talent acquisition strategies, organizational development, and
+                  employee engagement solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <i class="fas fa-tasks fa-3x text-secondary mb-3"></i>
+                <h4 class="card-title">Project Management</h4>
+                <p class="card-text">
+                  End-to-end project oversight ensuring delivery on time, within
+                  scope, and on budget.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</BaseLayout>

@@ -1,0 +1,19 @@
+{
+  "name": "velcorix-website",
+  "version": "1.0.0",
+  "description": "Velcorix — mechanical trading and consultancy, UAE",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoaib7080/velcorix-website.git"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "astro": "^7.1.6"
+  }
+}

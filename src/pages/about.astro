@@ -1,0 +1,308 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const meta = {
+  title: "About Us - Velcorix Consultancy & Rentals",
+  description: "Learn more about Velcorix, a leading UAE-based provider of industrial equipment rentals, mechanical trading, and engineering consultancy for the oil, gas, and energy sectors.",
+  canonical: "https://www.velcorix.com/about.html",
+  schemas: [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.velcorix.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Velcorix - Engineering & Consultancy",
+          "item": "https://www.velcorix.com/about.html"
+        }
+      ]
+    }
+  ],
+};
+---
+
+<BaseLayout {...meta}>
+  <!-- Page Header -->
+      <header class="bg-dark text-white text-center py-5" style="
+          background:
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(&quot;assets/images/hero/DSC_2378.JPG&quot;);
+          background-size: cover;
+          background-position: center;
+        ">
+        <div class="container">
+          <h1 class="display-4 fw-bold">
+            About Velcorix - Engineering &amp; Consultancy
+          </h1>
+          <p class="lead">
+            Engineering-led consultancy and equipment rental solutions for
+            critical industrial operations.
+          </p>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <h2 class="mb-3">Leading Industrial Consultants in UAE</h2>
+              <p>
+                Velcorix is a UAE-based technical consultancy and equipment rental
+                company supporting oil &amp; gas, energy, and industrial projects. We
+                work closely with operators, EPC contractors, and service
+                providers across shutdowns, commissioning, and operational
+                phases—delivering practical, field-driven solutions backed by
+                reliable equipment and documentation across Dubai, Abu Dhabi, and
+                the Northern Emirates.
+              </p>
+              <p>
+                Our team brings hands-on experience from live plant environments,
+                ensuring that recommendations are executable, compliant, and
+                aligned with project realities.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <img src="/assets/images/other/DSC_2439.JPG" class="img-fluid shadow" style="
+                  border-radius: 8px;
+                  object-fit: cover;
+                  width: 100%;
+                  height: 400px;
+                " alt="Velcorix Professional Engineering and Consultancy Team in UAE" onerror="
+                  this.src = 'https://placehold.co/600x400?text=Team+Image'
+                ">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We Do Section -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-title">
+            <h2>What We Do</h2>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4 mb-4">
+              <div class="industry-card" style="
+                  --bg-img: url(&quot;../../assets/images/services/DSC_2558.JPG&quot;);
+                ">
+                <div class="industry-content">
+                  <i class="fas fa-user-tie fa-3x mb-3"></i>
+                  <h5>Technical Consultancy</h5>
+                  <p class="small mb-0">For shutdowns, EPC, commissioning</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="industry-card" style="
+                  --bg-img: url(&quot;../../assets/images/services/DSC_2510.JPG&quot;);
+                ">
+                <div class="industry-content">
+                  <i class="fas fa-tools fa-3x mb-3"></i>
+                  <h5>Specialized On-Site Services</h5>
+                  <p class="small mb-0">
+                    Flange management, testing, hot tapping
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="industry-card" style="
+                  --bg-img: url(&quot;../../assets/images/services/DSC_2341.JPG&quot;);
+                ">
+                <div class="industry-content">
+                  <i class="fas fa-cogs fa-3x mb-3"></i>
+                  <h5>Certified Equipment Rental</h5>
+                  <p class="small mb-0">For critical operations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What we stand for -->
+      <section class="section-padding bg-light">
+        <div class="container">
+          <div class="section-title">
+            <h2>Our Operating Principles</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+              <div class="row">
+                <div class="col-md-6 mb-5">
+                  <div class="d-flex align-items-start text-start">
+                    <div class="me-3 text-primary">
+                      <i class="fas fa-shield-alt fa-2x"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">Safety-First Execution</h5>
+                      <p class="text-muted">
+                        Safety-first execution across all operations
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="d-flex align-items-start text-start">
+                    <div class="me-3 text-primary">
+                      <i class="fas fa-tools fa-2x"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">Field-Driven Consultancy</h5>
+                      <p class="text-muted">
+                        Practical, field-driven consultancy
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="d-flex align-items-start text-start">
+                    <div class="me-3 text-primary">
+                      <i class="fas fa-handshake fa-2x"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">Single-Point Responsibility</h5>
+                      <p class="text-muted">
+                        Accountability and single-point responsibility
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="d-flex align-items-start text-start">
+                    <div class="me-3 text-primary">
+                      <i class="fas fa-file-contract fa-2x"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold">Compliance &amp; Documentation</h5>
+                      <p class="text-muted">
+                        Compliance, documentation, and traceability
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Who We Support Section -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-title">
+            <h2>Who We Support</h2>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-3 mb-4">
+              <div class="p-4">
+                <i class="fas fa-oil-can fa-3x text-primary mb-3"></i>
+                <h5>Oil &amp; Gas Operators</h5>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="p-4">
+                <i class="fas fa-industry fa-3x text-primary mb-3"></i>
+                <h5>EPC &amp; Turnkey Contractors</h5>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="p-4">
+                <i class="fas fa-wrench fa-3x text-primary mb-3"></i>
+                <h5>Maintenance &amp; Shutdown Teams</h5>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="p-4">
+                <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                <h5>Industrial Facilities and Plants</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Regional Presence & Execution Capability -->
+      <section class="section-padding bg-light mb-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+              <img src="/assets/images/other/DSC_2468.JPG" class="img-fluid shadow" style="
+                  border-radius: 8px;
+                  object-fit: cover;
+                  width: 100%;
+                  height: 350px;
+                " alt="Regional Presence" onerror="
+                  this.src =
+                    'https://placehold.co/600x400?text=Regional+Presence+Image'
+                ">
+            </div>
+            <div class="col-lg-6">
+              <h2 class="mb-3">Regional Presence &amp; Execution Capability</h2>
+              <p>
+                Strategically headquartered in Dubai, Velcorix leverages the UAE's
+                robust infrastructure and connectivity to serve clients across the
+                Middle East. Our regional presence enables us to mobilize teams
+                and equipment swiftly, ensuring timely execution of projects in
+                dynamic environments.
+              </p>
+              <p>
+                Our local expertise, combined with a deep understanding of
+                regional regulations and industry standards, positions us as a
+                reliable partner for complex industrial operations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta-section text-white">
+        <div class="container text-center">
+          <h2 class="cta-heading mb-4">
+            Ready to Work with a Technical Partner You Can Rely On?
+          </h2>
+          <a href="/contact.html" class="btn btn-primary btn-lg fw-bold">Discuss Your Requirement</a>
+        </div>
+        <div class="footer-divider"></div>
+      </section>
+
+      <!-- Mission & Vision -->
+      <!-- <section class="section-padding bg-light">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-6 mb-4">
+              <div class="p-4 bg-white shadow rounded h-100">
+                <i class="fas fa-bullseye fa-3x text-secondary mb-3"></i>
+                <h3>Our Mission</h3>
+                <p>
+                  To provide superior mechanical solutions and consultancy
+                  services that empower our clients to achieve operational
+                  excellence and sustainable growth.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="p-4 bg-white shadow rounded h-100">
+                <i class="fas fa-eye fa-3x text-secondary mb-3"></i>
+                <h3>Our Vision</h3>
+                <p>
+                  To be the leading mechanical partner in the Middle East, known
+                  for our integrity, innovation, and unwavering commitment to
+                  quality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+</BaseLayout>
